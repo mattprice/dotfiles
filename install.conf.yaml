@@ -8,6 +8,9 @@
 
 - clean: ["~"]
 
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
 - link:
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc.zsh
@@ -15,5 +18,7 @@
     ~/.config/karabiner: karabiner
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
     - [zplug update, Updating zplug plugins]
+
+- brewfile:
+    - brew/Brewfile

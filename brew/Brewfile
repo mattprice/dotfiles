@@ -1,0 +1,51 @@
+# tap 'caskroom/cask'
+# cask 'aerial'
+# cask 'ngrok'
+
+# Dev: Go
+brew 'go'
+brew 'glide'
+
+# Dev: JavaScript
+brew 'node-build'
+brew 'nodenv'
+brew 'yarn', args: ['without-node']
+
+# Dev: Ruby
+brew 'rbenv'
+brew 'ruby-build'
+
+# Dev: Swift
+# brew 'carthage'
+
+# Shell
+brew 'zplug'
+brew 'zsh'
+brew 'shellcheck'
+
+# Images/Videos
+brew 'ffmpeg'
+brew 'graphviz'
+brew 'guetzli'
+brew 'imagemagick'
+brew 'jonof/kenutils/pngout'
+brew 'jpegoptim'
+brew 'optipng'
+brew 'pngcrush'
+brew 'pngquant'
+brew 'youtube-dl'
+
+# Miscellaneous
+brew 'ack'
+brew 'bat'
+# brew 'bfg'
+brew 'git'
+brew 'choose-gui'
+brew 'gnupg'
+brew 'gpg-agent'
+brew 'htop'
+brew 'httpie'
+brew 'tldr'
+brew 'tmux'
+brew 'wget'
+# brew 'wrk'
