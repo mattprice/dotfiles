@@ -12,6 +12,7 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zshenv: zsh/zshenv.zsh
+    ~/.config/karabiner: karabiner
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
