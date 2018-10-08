@@ -1,0 +1,12 @@
+# https://github.com/anishathalye/dotbot#configuration
+
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ["~"]
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
