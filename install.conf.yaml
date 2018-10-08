@@ -10,6 +10,9 @@
 
 - link:
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.zshrc: zsh/zshrc.zsh
+    ~/.zshenv: zsh/zshenv.zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [zplug update, Updating zplug plugins]
