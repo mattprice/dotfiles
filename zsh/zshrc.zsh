@@ -3,13 +3,16 @@ export EDITOR="code -w"
 
 # History File
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
-setopt histignoredups # Don't save lines if they're a dupe of the previous line
-setopt histreduceblanks # Remove unnecessary blanks from commands
+HISTSIZE=1000 # Lines of history to keep in memory for current session
+SAVEHIST=1000 # Number of history entries to save to disk
+setopt append_history # Append to file so windows don't overwite each other
+setopt hist_ignore_dups # Don't save lines if they duplicate the previous line
+setopt hist_reduce_blanks # Remove unnecessary blanks from commands
+setopt inc_append_history # Immediately append to the history file
+setopt share_history # Share history across terminal windows
 
 ### ZSH PLUGINS ###
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME="/usr/local/opt/zplug"
 source "${ZPLUG_HOME}/init.zsh"
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
