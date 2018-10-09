@@ -23,6 +23,10 @@
     - brew/Brewfile
 
 - shell:
+    - command: bundle install --system --gemfile=gem/Gemfile
+      description: Installing Ruby gems
+      stdout: true
     - command: ./zsh/zplug-update
       description: Installing zplug plugins
       stdout: true
+    - [rm gem/Gemfile.lock, Removing Gemfile.lock]
