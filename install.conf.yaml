@@ -16,6 +16,7 @@
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zshenv: zsh/zshenv.zsh
     ~/.config/karabiner: karabiner
+    ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode
 
 - shell:
     - [zplug update, Updating zplug plugins]
