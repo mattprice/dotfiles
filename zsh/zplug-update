@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+# Scripts only have access to stuff in zshenv, so this is a hack for Dotbot
+source "${HOME}/.zshrc"
+
+zplug update

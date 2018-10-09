@@ -2,8 +2,8 @@
 # no path and leave a trail. — Ralph Waldo Emerson
 export PATH="/usr/local/bin:/usr/local/sbin:${PATH}"    # Homebrew
 
-# These are here so apps such as Tower and Anvil have access to Node/Ruby
-# TODO: I don't think this works anymore…
+# These are here so scripts/apps have access to Node and Ruby.
+# TODO: I don't think this works for apps anymore…
 eval "$(nodenv init -)"
 eval "$(rbenv init -)"
 
