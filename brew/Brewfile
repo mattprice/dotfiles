@@ -1,6 +1,13 @@
-# tap 'caskroom/cask'
+tap 'caskroom/cask'
+tap 'homebrew/cask-fonts'
+
+# Applications
 # cask 'aerial'
 # cask 'ngrok'
+
+# Fonts
+cask 'font-fira-code'
+cask 'font-source-code-pro'
 
 # Dev: Go
 brew 'go'
