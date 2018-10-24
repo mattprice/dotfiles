@@ -15,7 +15,9 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 fi
 
 # Google Cloud SDK
-source "$HOME/Code/google-cloud-sdk/path.zsh.inc"
+if [[ -d "${HOME}/Code/google-cloud-sdk/" ]]; then
+    source "${HOME}/Code/google-cloud-sdk/path.zsh.inc"
+fi
 
 # Disable global profiles, which overwrite our PATH
 setopt no_global_rcs

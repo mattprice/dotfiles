@@ -27,7 +27,9 @@ zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 zplug load
 
 # Google Cloud SDK Autocompletion
-source "${HOME}/Code/google-cloud-sdk/completion.zsh.inc"
+if [[ -d "$HOME/Code/google-cloud-sdk/" ]]; then
+  source "${HOME}/Code/google-cloud-sdk/completion.zsh.inc"
+fi
 
 ### KEY BINDINGS ###
 case $TERM in (xterm*)
