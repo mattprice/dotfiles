@@ -1,0 +1,27 @@
+# https://github.com/anishathalye/dotbot#configuration
+
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ["~"]
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.zshrc: zsh/zshrc.zsh
+    ~/.zshenv: zsh/zshenv.zsh
+    ~/.config/htop: htop
+
+- shell:
+    # - command: bundle install --system --gemfile=gem/Gemfile
+    #   description: Installing Ruby gems
+    #   stdout: true
+    - command: ./zsh/zplug-update
+      description: Installing zplug plugins
+      stdout: true
+    # - [rm gem/Gemfile.lock, Removing Gemfile.lock]
