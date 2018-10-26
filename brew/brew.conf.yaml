@@ -1,0 +1,4 @@
+# https://github.com/d12frosted/dotbot-brew
+
+- brewfile:
+    - brew/Brewfile

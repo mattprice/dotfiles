@@ -1,5 +1,4 @@
-# This is a separate config file since apt-get requires sudo.
-# It should be run before the main linux config.
+# WARNING: This configuration is run via sudo.
 # https://github.com/dein0s/dotbot_plugin_aptget
 
 - aptget:

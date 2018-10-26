@@ -22,14 +22,20 @@
     ~/.rbenv: rbenv
     ~/.rbenv/plugins/ruby-build: ruby-build
 
-    # Shell
+    # Terminal
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zshenv: zsh/zshenv.zsh
     ~/.zplug: zplug
-
-    # Apps
     ~/.config/htop: htop
+
+    # Mac Applications
+    ~/.config/karabiner:
+      path: karabiner
+      if: "[[ $(uname -s) == 'Darwin' ]]"
+    ~/Library/Developer/Xcode/UserData/FontAndColorThemes:
+      path: xcode
+      if: "[[ $(uname -s) == 'Darwin' ]]"
 
 - shell:
     # Node
@@ -41,9 +47,9 @@
     # Ruby
     - [rbenv install -s 2.5.3, Installing Ruby 2.5.3]
     - [rbenv global 2.5.3, Setting default Ruby version]
-    - [gem install bundle, Installing Bundler]
+    - [gem install bundler, Installing Bundler]
+
+    # Terminal
+    - [./zsh/zplug-update, Installing zplug plugins]
     - [bundle install --system --gemfile=gem/Gemfile, Installing gems]
     - [rm gem/Gemfile.lock, Removing gem lockfile]
-
-    # Shell
-    - [./zsh/zplug-update, Installing zplug plugins]

@@ -2,6 +2,10 @@
 
 set -e
 
+CONFIG="install.conf.yaml"
+BREW_CONFIG="brew/brew.conf.yaml"
+APT_CONFIG="apt/apt.conf.yaml"
+
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -10,10 +14,11 @@ cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
+# Before anything else, install dependencies.
 if [[ $(uname -s) == 'Darwin' ]]; then
-    # Run the Mac-specific configuration if the OS is Darwin
-    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "mac.conf.yaml" "${@}"
+    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "${BREW_CONFIG}" "${@}"
 else
-    sudo "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-aptget -c "linux-apt.conf.yaml" "${@}"
-    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "linux.conf.yaml" "${@}"
+    sudo "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-aptget -c "${APT_CONFIG}" "${@}"
 fi
+
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "${CONFIG}" "${@}"
