@@ -1,9 +1,10 @@
 #!/usr/bin/env zsh
 
-# TODO: zplug is installed via Homebrew
-# So this whole thing is currently broken on non-Mac systems.
-
 # Scripts only have access to stuff in zshenv, so this is a hack for Dotbot
 source "${HOME}/.zshrc"
 
-zplug update
+if ! zplug check; then
+  zplug install
+else
+  zplug update
+fi

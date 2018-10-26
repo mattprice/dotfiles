@@ -19,3 +19,7 @@
 [submodule "ruby-build"]
 	path = ruby-build
 	url = https://github.com/rbenv/ruby-build.git
+[submodule "zplug"]
+	path = zplug
+	url = https://github.com/zplug/zplug.git
+	ignore = dirty

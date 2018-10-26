@@ -26,6 +26,9 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zshenv: zsh/zshenv.zsh
+    ~/.zplug: zplug
+
+    # Apps
     ~/.config/htop: htop
 
 - shell:

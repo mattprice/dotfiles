@@ -26,9 +26,10 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zshenv: zsh/zshenv.zsh
-    ~/.config/htop: htop
+    ~/.zplug: zplug
 
-    # Mac Apps
+    # Apps
+    ~/.config/htop: htop
     ~/.config/karabiner: karabiner
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode
 

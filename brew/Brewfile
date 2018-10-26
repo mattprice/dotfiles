@@ -17,7 +17,6 @@ brew 'glide'
 # brew 'carthage'
 
 # Shell
-brew 'zplug'
 brew 'zsh'
 brew 'shellcheck'
 

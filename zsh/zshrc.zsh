@@ -12,7 +12,7 @@ setopt inc_append_history # Immediately append to the history file
 setopt share_history # Share history across terminal windows
 
 ### ZSH PLUGINS ###
-export ZPLUG_HOME="/usr/local/opt/zplug"
+export ZPLUG_HOME="${HOME}/.zplug"
 source "${ZPLUG_HOME}/init.zsh"
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
@@ -21,9 +21,6 @@ zplug 'sindresorhus/pure', use:pure.zsh, from:github, as:theme
 zplug 'zsh-users/zsh-autosuggestions', from:github
 zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 
-# if ! zplug check; then
-#   zplug install
-# fi
 zplug load
 
 # Google Cloud SDK Autocompletion
