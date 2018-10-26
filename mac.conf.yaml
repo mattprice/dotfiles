@@ -5,6 +5,8 @@
       create: true
       relink: true
       force: true
+    shell:
+      stdout: true
 
 - clean: ["~"]
 
@@ -12,10 +14,21 @@
     - [git submodule update --init --recursive, Installing submodules]
 
 - link:
+    # Node
+    ~/.nodenv: nodenv
+    ~/.nodenv/plugins/node-build: node-build
+
+    # Ruby
+    ~/.rbenv: rbenv
+    ~/.rbenv/plugins/ruby-build: ruby-build
+
+    # Shell
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zshenv: zsh/zshenv.zsh
     ~/.config/htop: htop
+
+    # Mac Apps
     ~/.config/karabiner: karabiner
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode
 
@@ -24,10 +37,18 @@
     - brew/Brewfile
 
 - shell:
-    - command: bundle install --system --gemfile=gem/Gemfile
-      description: Installing Ruby gems
-      stdout: true
-    - command: ./zsh/zplug-update
-      description: Installing zplug plugins
-      stdout: true
-    - [rm gem/Gemfile.lock, Removing Gemfile.lock]
+    # Node
+    - [nodenv install -s 8.12.0, Installing Node 8.12.0]
+    - [nodenv global 8.12.0, Setting default Node version]
+    - [npm install -g npm, Updating NPM]
+    - [npm install -g yarn, Installing Yarn]
+
+    # Ruby
+    - [rbenv install -s 2.5.3, Installing Ruby 2.5.3]
+    - [rbenv global 2.5.3, Setting default Ruby version]
+    - [gem install bundle, Installing Bundler]
+    - [bundle install --system --gemfile=gem/Gemfile, Installing gems]
+    - [rm gem/Gemfile.lock, Removing gem lockfile]
+
+    # Shell
+    - [./zsh/zplug-update, Installing zplug plugins]

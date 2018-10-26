@@ -13,15 +13,6 @@ cask 'font-source-code-pro'
 brew 'go'
 brew 'glide'
 
-# Dev: JavaScript
-brew 'node-build'
-brew 'nodenv'
-brew 'yarn', args: ['without-node']
-
-# Dev: Ruby
-brew 'rbenv'
-brew 'ruby-build'
-
 # Dev: Swift
 # brew 'carthage'
 

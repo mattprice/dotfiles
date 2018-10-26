@@ -1,6 +1,8 @@
 # Do not go where the path may lead, go instead where there is
 # no path and leave a trail. — Ralph Waldo Emerson
 export PATH="/usr/local/bin:/usr/local/sbin:${PATH}"    # Homebrew
+export PATH="${HOME}/.nodenv/bin:${PATH}"               # nodenv
+export PATH="${HOME}/.rbenv/bin:${PATH}"                # rbenv
 
 # These are here so scripts/apps have access to Node and Ruby.
 # TODO: I don't think this works for apps anymore…
