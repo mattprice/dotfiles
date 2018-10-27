@@ -8,9 +8,16 @@
     - htop
     - shellcheck
     - tmux
-    - build-essential
     - fonts-firacode
     - zsh
+
+    # Required to compile native Node modules
+    - build-essential
+
+    # Required to compile Ruby
+    - libssl-dev
+    - libreadline-dev
+    - zlib1g-dev
 
 - shell:
     - [./apt/install-bat, Installing bat]
