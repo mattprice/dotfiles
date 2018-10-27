@@ -53,3 +53,5 @@
     - [./zsh/zplug-update, Installing zplug plugins]
     - [bundle install --system --gemfile=gem/Gemfile, Installing gems]
     - [rm gem/Gemfile.lock, Removing gem lockfile]
+    - [npm install -g diff-so-fancy, Installing diff-so-fancy]
+    - [npm install -g tldr, Installing tldr]

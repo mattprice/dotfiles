@@ -2,7 +2,16 @@
 # https://github.com/dein0s/dotbot_plugin_aptget
 
 - aptget:
-    - git
+    - ack
+    - curl
+    - httpie
+    - htop
+    - shellcheck
+    - tmux
     - build-essential
     - fonts-firacode
     - zsh
+
+- shell:
+    - [./apt/install-bat, Installing bat]
+    - [./apt/install-source-code-pro, Installing Source Code Pro font]
