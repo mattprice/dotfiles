@@ -19,6 +19,7 @@
     ~/.config/karabiner: karabiner
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes: xcode
 
+# https://github.com/d12frosted/dotbot-brew
 - brewfile:
     - brew/Brewfile
 
