@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/dotbot": true,
+        "**/dotbot-aptget": true,
+        "**/dotbot-brew": true,
+        "**/node-build": true,
+        "**/nodenv": true,
+        "**/ruby-build": true,
+        "**/rbenv": true,
+        "**/zplug": true,
+    }
+}
