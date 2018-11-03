@@ -14,11 +14,22 @@
     # Required to compile native Node modules
     - build-essential
 
-    # Required to compile Ruby
+    # Required for ruby-build
     - libssl-dev
     - libreadline-dev
     - zlib1g-dev
 
+# Themes
+- aptget:
+    vanilla-gnome-desktop:
+    gnome-tweaks:
+    arc-theme: ppa:fossfreedom/arc-gtk-theme-daily
+    papirus-icon-theme: ppa:papirus/papirus
+
 - shell:
     - [./apt/install-bat, Installing bat]
     - [./apt/install-source-code-pro, Installing Source Code Pro font]
+    - command: bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
+      description: Install One Dark theme for Terminal
+    - command: sudo sed -i.orig 's/white/#d3dae3/g' /usr/share/themes/Arc-Dark/gnome-shell/gnome-shell.css
+      description: Adjust icon color for Papirus icons and Arc theme

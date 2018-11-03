@@ -14,7 +14,7 @@ cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive
 
-# Before anything else, install dependencies.
+# Before anything else, install dependencies
 if [[ $(uname -s) == 'Darwin' ]]; then
     "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir dotbot-brew -c "${BREW_CONFIG}" "${@}"
 else
