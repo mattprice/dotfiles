@@ -4,6 +4,7 @@
 - aptget:
     - ack
     - curl
+    - gnome-software-plugin-flatpak
     - httpie
     - htop
     - shellcheck
@@ -24,6 +25,8 @@
     - gnome-tweaks
 
 - aptget:
+    flatpak: ppa:alexlarsson/flatpak
+
     # Themes
     arc-theme: ppa:fossfreedom/arc-gtk-theme-daily
     papirus-icon-theme: ppa:papirus/papirus
@@ -31,7 +34,11 @@
 - shell:
     - [./apt/install-bat, Installing bat]
     - [./apt/install-source-code-pro, Installing Source Code Pro font]
+    - command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      description: Adding Flathub repository to Flatpak
+
+    # Themes
     - command: bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
-      description: Install One Dark theme for Terminal
+      description: Installing One Dark theme for Terminal
     - command: sudo sed -i.orig 's/white/#d3dae3/g' /usr/share/themes/Arc-Dark/gnome-shell/gnome-shell.css
-      description: Adjust icon color for Papirus icons and Arc theme
+      description: Adjusting icon color for Papirus + Arc
