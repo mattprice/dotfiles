@@ -12,13 +12,12 @@
     - fonts-firacode
     - zsh
 
-    # Required to compile native Node modules
+    # Build Tools
+    - autoconf
     - build-essential
-
-    # Required for ruby-build
-    - libssl-dev
-    - libreadline-dev
-    - zlib1g-dev
+    - libssl-dev      # ruby-build
+    - libreadline-dev # ruby-build
+    - zlib1g-dev      # ruby-build
 
     # Themes
     - vanilla-gnome-desktop
@@ -38,7 +37,10 @@
       description: Adding Flathub repository to Flatpak
 
     # Themes
+    - [./apt/install-arc-icon-theme, Installing Arc icon theme]
     - command: bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
       description: Installing One Dark theme for Terminal
     - command: sudo sed -i.orig 's/white/#d3dae3/g' /usr/share/themes/Arc-Dark/gnome-shell/gnome-shell.css
-      description: Adjusting icon color for Papirus + Arc
+      description: Adjusting Arc icon color
+    - command: sudo sed -i.orig 's/Inherits=Moka/Inherits=Papirus-Light/' /usr/share/icons/Arc/index.theme
+      description: Changing Arc icon fallback theme
