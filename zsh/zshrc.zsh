@@ -44,6 +44,7 @@ bindkey '^[[1;9D' backward-word     # Alt + Left
 
 ### ALIASES ###
 ## General Aliases
+alias cx="chmod +x"
 alias ip="curl -L http://icanhazip.com/"
 alias lx="ls -lAhGp"
 alias rm_dsstore="find . -name '*.DS_Store' -type f -delete" # Recursively delete .DS_Store files
@@ -52,10 +53,10 @@ alias sha256="openssl dgst -sha256"
 alias trim='mogrify -trim' # Trim whitespace around images
 alias youtube='youtube-dl -f mp4/flv -o "%(title)s.%(ext)s" --recode-video mp4' # 37/38/22/18
 
-# Development Aliases
-alias cx="chmod +x"
-alias srv="php -S localhost:8080" # Start a PHP server in the current directory
-alias zp="${EDITOR} ~/.zshrc; source ~/.zshrc"
+if [[ $(uname -s) != 'Darwin' ]]; then
+  # Because `open` is way too engrained in my memory...
+  alias open="xdg-open"
+fi
 
 # Git Aliases
 # TODO: I should probably turn these into a git config…
