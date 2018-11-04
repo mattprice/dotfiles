@@ -2,7 +2,7 @@ tap 'caskroom/cask'
 tap 'homebrew/cask-fonts'
 
 # Applications
-# cask 'aerial'
+cask 'aerial'
 # cask 'ngrok'
 
 # Fonts

@@ -19,10 +19,12 @@
     - libreadline-dev
     - zlib1g-dev
 
-# Themes
+    # Themes
+    - vanilla-gnome-desktop
+    - gnome-tweaks
+
 - aptget:
-    vanilla-gnome-desktop:
-    gnome-tweaks:
+    # Themes
     arc-theme: ppa:fossfreedom/arc-gtk-theme-daily
     papirus-icon-theme: ppa:papirus/papirus
 
