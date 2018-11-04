@@ -12,8 +12,11 @@ If you have a MacBook with Touch ID, you may also want to [enable sudo using you
 auth       sufficient     pam_tid.so
 ```
 
-## Ubuntu Post-Install Steps
+## Ubuntu Post-Install
 
-1. To finish setting up `vanilla-gnome-desktop`, log out and select "GNOME on Xorg" from the settings menu before logging back in.
-2. Install [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/).
-3. Enable shell and icon themes using Gnome Tweaks.
+To finish setting up `vanilla-gnome-desktop`, log out and select "GNOME on Xorg" from the settings menu before logging back in. Then, enable the shell, icon, and application themes using Gnome Tweaks.
+
+### Suggested Applications
+
+- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+- [One Dark Theme](https://github.com/denysdovhan/one-gnome-terminal) for the GNOME Terminal

@@ -15,9 +15,9 @@
     # Build Tools
     - autoconf
     - build-essential
-    - libssl-dev      # ruby-build
+    - libssl-dev # ruby-build
     - libreadline-dev # ruby-build
-    - zlib1g-dev      # ruby-build
+    - zlib1g-dev # ruby-build
 
     # Themes
     - vanilla-gnome-desktop
@@ -38,8 +38,6 @@
 
     # Themes
     - [./apt/install-arc-icon-theme, Installing Arc icon theme]
-    - command: bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
-      description: Installing One Dark theme for Terminal
     - command: sudo sed -i.orig 's/white/#d3dae3/g' /usr/share/themes/Arc-Dark/gnome-shell/gnome-shell.css
       description: Adjusting Arc icon color
     - command: sudo sed -i.orig 's/Inherits=Moka/Inherits=Papirus-Light/' /usr/share/icons/Arc/index.theme
