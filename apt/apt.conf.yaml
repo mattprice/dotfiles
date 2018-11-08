@@ -25,6 +25,7 @@
 
 - aptget:
     flatpak: ppa:alexlarsson/flatpak
+    autokey-gtk: ppa:sporkwitch/autokey
 
     # Themes
     arc-theme: ppa:fossfreedom/arc-gtk-theme-daily
