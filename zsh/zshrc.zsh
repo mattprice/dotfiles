@@ -125,22 +125,29 @@ function todo() {
 
 # Search for a project and quickly open it
 function wo() {
-  # Get a list of all possible projects
-  # We grep against the basename so "matt" doesn't catch "/Users/mattprice/"
-  project_list=$(mdfind -0 'kMDItemUserTags == Projects' | xargs -0 basename | grep -i "$@")
-  num_results=$(echo "${project_list}" | grep -vc ^$)
+  project_dir="${HOME}/.config/projects"
 
-  if (( num_results < 1 )); then
-    echo "Could not find any projects matching that name."
-    return 1
+  if [ "$*" = "add" ]; then
+    ln -s "$(pwd)" "${project_dir}/$(pwd | xargs basename)"
+  elif [ "$*" = "delete" ]; then
+    rm "${project_dir}/$(pwd | xargs basename)"
+  elif [ "$*" = "list" ]; then
+    ls -l "${project_dir}" | awk '{print $9,$10,$11}'
+  else
+    project_matches=$(ls "${project_dir}/" | grep "$*")
+    num_results=$(echo "${project_matches}" | grep -vc ^$)
+
+    if (( num_results < 1 )); then
+      echo "Could not find any projects matching that name."
+      return 1
+    fi
+
+    if (( num_results > 1 )); then
+      project=$(echo "${project_matches}" | fzy)
+      cd -P "${project_dir}/${project}" || exit
+      return 0
+    fi
+
+    cd -P "${project_dir}/${project_matches}" || exit
   fi
-
-  if (( num_results > 1 )); then
-    project=$(mdfind 'kMDItemUserTags == Projects' | grep -e "/$(echo ${project_list} | choose )\$")
-    cd "${project}" || exit
-    return 0
-  fi
-
-  project=$(mdfind 'kMDItemUserTags == Projects' | grep -e "/${project_list}\$")
-  cd "${project}" || exit
 }

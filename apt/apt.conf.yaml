@@ -11,6 +11,7 @@
     - tmux
     - fonts-firacode
     - zsh
+    - fzy
 
     # Build Tools
     - autoconf

@@ -19,6 +19,7 @@ brew 'glide'
 # Shell
 brew 'zsh'
 brew 'shellcheck'
+brew 'fzy'
 
 # Images/Videos
 brew 'ffmpeg'
@@ -37,7 +38,7 @@ brew 'ack'
 brew 'bat'
 # brew 'bfg'
 brew 'git'
-brew 'choose-gui'
+# brew 'choose-gui'
 brew 'gnupg'
 brew 'gpg-agent'
 brew 'htop'
