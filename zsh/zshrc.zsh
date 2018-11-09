@@ -66,7 +66,12 @@ alias gd="git difftool"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gp="git pull --rebase=preserve --autostash"
 alias gs="git status"
-alias gt="gittower ."
+
+if [[ $(uname -s) == 'Darwin' ]]; then
+  alias gt="gittower ."
+else
+  alias gt="gitg --commit < /dev/null &> /dev/null &"
+fi
 
 # CD to the path of the frontmost Finder window
 # http://brettterpstra.com/2013/02/09/quick-tip-jumping-to-the-finder-location-in-terminal/
