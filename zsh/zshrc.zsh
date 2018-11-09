@@ -88,7 +88,7 @@ function merge() {
 }
 
 # Open, edit, or delete the Tmuxinator project for the current folder
-# https://github.com/tmuxinator/tmuxinator
+# https://mattprice.me/2018/quickly-open-tmuxinator-project/
 function mux() {
   project=$(pwd | xargs basename)
 
