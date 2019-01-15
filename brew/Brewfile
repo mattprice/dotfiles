@@ -1,5 +1,6 @@
 tap 'caskroom/cask'
 tap 'homebrew/cask-fonts'
+tap 'jonof/kenutils'
 
 # Applications
 cask 'aerial'
@@ -38,9 +39,7 @@ brew 'ack'
 brew 'bat'
 # brew 'bfg'
 brew 'git'
-# brew 'choose-gui'
 brew 'gnupg'
-brew 'gpg-agent'
 brew 'htop'
 brew 'httpie'
 brew 'tmux'
