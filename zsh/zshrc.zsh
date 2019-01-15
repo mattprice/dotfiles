@@ -1,5 +1,6 @@
 ### ZSH SETTINGS ###
 export EDITOR="code -w"
+export CLICOLOR=1
 
 # History File
 HISTFILE=~/.zsh_history
@@ -46,7 +47,7 @@ bindkey '^[[1;9D' backward-word     # Alt + Left
 ## General Aliases
 alias cx="chmod +x"
 alias ip="curl -L http://icanhazip.com/"
-alias lx="ls -lAhGp"
+alias lx="ls --color=always -lAhGp"
 alias rm_dsstore="find . -name '*.DS_Store' -type f -delete" # Recursively delete .DS_Store files
 alias sha1="openssl dgst -sha1"
 alias sha256="openssl dgst -sha256"
