@@ -28,6 +28,8 @@
     ~/.zshenv: zsh/zshenv.zsh
     ~/.zplug: zplug
     ~/.config/htop: htop
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
 
     # Mac Applications
     ~/.config/karabiner:
