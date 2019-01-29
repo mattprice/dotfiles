@@ -50,15 +50,16 @@ bindkey '^[[1;9D' backward-word     # Alt + Left
 ## General Aliases
 alias cx="chmod +x"
 alias ip="curl -L http://icanhazip.com/"
-alias lx="ls --color=always -lAhGp"
 alias rm_dsstore="find . -name '*.DS_Store' -type f -delete" # Recursively delete .DS_Store files
 alias sha1="openssl dgst -sha1"
 alias sha256="openssl dgst -sha256"
 alias trim='mogrify -trim' # Trim whitespace around images
 alias youtube='youtube-dl -f mp4/flv -o "%(title)s.%(ext)s" --recode-video mp4' # 37/38/22/18
 
-if [[ $(uname -s) != 'Darwin' ]]; then
-  # Because `open` is way too engrained in my memory...
+if [[ $(uname -s) == 'Darwin' ]]; then
+  alias lx="ls -lAhGp"
+else
+  alias lx="ls --color=always -lAhGp"
   alias open="xdg-open"
 fi
 
