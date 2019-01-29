@@ -29,6 +29,9 @@ if [[ -d "$HOME/Code/google-cloud-sdk/" ]]; then
   source "${HOME}/Code/google-cloud-sdk/completion.zsh.inc"
 fi
 
+### BAT SETTINGS ###
+export BAT_THEME="TwoDark"
+
 ### KEY BINDINGS ###
 case $TERM in (xterm*)
   bindkey '\e[H' beginning-of-line  # Home (xterm)
