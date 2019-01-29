@@ -18,5 +18,11 @@ To finish setting up `vanilla-gnome-desktop`, log out and select "GNOME on Xorg"
 
 ### Suggested Applications
 
-- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
-- [One Dark Theme](https://github.com/denysdovhan/one-gnome-terminal) for the GNOME Terminal
+- Calendar: [MineTime](https://minetime.ai)
+- Dock: [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+- Email: [Mailspring](https://getmailspring.com)
+- GNOME Terminal Theme: [One Dark Theme](https://github.com/denysdovhan/one-gnome-terminal)
+- Git: [Gitg](https://wiki.gnome.org/Apps/Gitg)
+- Image Editing: [Krita](https://krita.org/)
+- Screen Recording: [Green Recorder](https://github.com/foss-project/green-recorder)
+- Text Expansion: [AutoKey](https://github.com/autokey/autokey)
