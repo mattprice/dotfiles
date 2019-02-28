@@ -2,18 +2,21 @@
 	excludesfile = ~/.gitignore_global
 	pager = diff-so-fancy | less --tabs=1,5 -R
 
-[push]
-	default = simple
-
 [credential]
 	helper = osxkeychain
 
-[github]
-	user = mattprice
+[fetch]
+	prune = true
 
 [pull]
 	rebase = true
 	autostash = true
+
+[push]
+	default = simple
+
+[github]
+	user = mattprice
 
 [include]
 	path = ~/.gitconfig_local
