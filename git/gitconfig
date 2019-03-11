@@ -18,5 +18,14 @@
 [github]
 	user = mattprice
 
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
+[alias]
+	merge-log = !sh -c 'git log --pretty=format:"%h" "$1~1..$1" | grep -v $1 | sort -r' --
+
 [include]
 	path = ~/.gitconfig_local
