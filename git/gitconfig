@@ -25,6 +25,7 @@
 	clean = git-lfs clean -- %f
 
 [alias]
+	# Usage: git merge-log fd0f5631 | xargs git cherry-pick
 	merge-log = !sh -c 'git log --pretty=format:"%h" "$1~1..$1" | grep -v $1 | sort -r' --
 
 [include]
