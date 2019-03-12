@@ -4,9 +4,21 @@ This repository contains my macOS and Ubuntu 18.04 (GNOME) configurations, power
 
 To install it, clone the repository and run: `./install`.
 
-## Sudo With Touch ID
+## macOS Post-Install
 
-If you have a MacBook with Touch ID, you may also want to [enable sudo using your fingerprint](https://twitter.com/cabel/status/931292107372838912) by editing `/etc/pam.d/sudo` and adding the following line to the top:
+### Hotkey to Select the Current Word
+
+Pressing Cmd+D to select the current word is one of my favorite text editor features, and it's snuck into my muscle memory. You can [set up a system-wide hotkey](https://mattprice.me/2015/osx-hotkey-select-current-word/) in `~/Library/Keybindings/DefaultKeyBinding.dict` that does the same, but unfortunately, macOS doesn't like that file to be a symlink:
+
+```swift
+{
+  "@d" = (selectWord:);
+}
+```
+
+### Sudo With Touch ID
+
+If you have a MacBook with Touch ID, you can [enable sudo using your fingerprint](https://twitter.com/cabel/status/931292107372838912) by editing `/etc/pam.d/sudo` and adding the following line to the top:
 
 ```text
 auth       sufficient     pam_tid.so
