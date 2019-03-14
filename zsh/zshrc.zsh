@@ -138,11 +138,11 @@ function wo() {
   project_dir="${HOME}/.config/projects"
 
   if [ "$*" = "add" ]; then
-    ln -s "$(pwd)" "${project_dir}/$(pwd | xargs basename)"
+    ln -s "$(pwd)" "${project_dir}/$(pwd | xargs -0 basename)"
   elif [ "$*" = "delete" ]; then
-    rm "${project_dir}/$(pwd | xargs basename)"
+    rm "${project_dir}/$(pwd | xargs -0 basename)"
   elif [ "$*" = "list" ]; then
-    ls -ln "${project_dir}" | awk '{print $9,$10,$11}'
+    stat -f "%N -> %Y" "${project_dir}"/* | sed "s:${project_dir}/::"
   else
     project_matches=$(ls "${project_dir}/" | grep "$*")
     num_results=$(echo "${project_matches}" | grep -vc ^$)
