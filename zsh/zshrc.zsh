@@ -142,7 +142,7 @@ function wo() {
   elif [ "$*" = "delete" ]; then
     rm "${project_dir}/$(pwd | xargs basename)"
   elif [ "$*" = "list" ]; then
-    ls -l "${project_dir}" | awk '{print $9,$10,$11}'
+    ls -ln "${project_dir}" | awk '{print $9,$10,$11}'
   else
     project_matches=$(ls "${project_dir}/" | grep "$*")
     num_results=$(echo "${project_matches}" | grep -vc ^$)
