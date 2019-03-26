@@ -72,9 +72,11 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gp="git pull --rebase=preserve --autostash"
 alias gs="git status"
 
-if [[ $(uname -s) == 'Darwin' ]]; then
+if command -v gittower > /dev/null; then
   alias gt="gittower ."
-else
+elif command -v github > /dev/null; then
+  alias gt="github ."
+elif command -v gitg > /dev/null; then
   alias gt="gitg --commit < /dev/null &> /dev/null &"
 fi
 
