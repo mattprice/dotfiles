@@ -164,3 +164,7 @@ function wo() {
     cd -P "${project_dir}/${project_matches}" || exit
   fi
 }
+
+if [[ -f "${HOME}/.zshrc_local" ]]; then
+  source "${HOME}/.zshrc_local"
+fi
