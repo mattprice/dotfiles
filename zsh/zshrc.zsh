@@ -8,6 +8,7 @@ HISTSIZE=1000 # Lines of history to keep in memory for current session
 SAVEHIST=1000 # Number of history entries to save to disk
 setopt append_history # Append to file so windows don't overwite each other
 setopt hist_ignore_dups # Don't save lines if they duplicate the previous line
+setopt hist_ignore_space # Don't save lines that are prefixed with a space
 setopt hist_reduce_blanks # Remove unnecessary blanks from commands
 setopt inc_append_history # Immediately append to the history file
 setopt share_history # Share history across terminal windows
