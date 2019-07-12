@@ -70,7 +70,7 @@ alias gb="git branch"
 alias gc="git checkout"
 alias gd="git difftool"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gp="git pull --rebase=preserve --autostash"
+alias gp="git pull --rebase=merges --autostash"
 alias gs="git status"
 
 if command -v gittower > /dev/null; then
