@@ -8,7 +8,7 @@
     - httpie
     - htop
     - shellcheck
-    - tmux
+    # - tmux
     - fonts-firacode
     - zsh
     - fzy

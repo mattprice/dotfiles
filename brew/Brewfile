@@ -4,7 +4,6 @@ tap 'jonof/kenutils'
 
 # Applications
 cask 'aerial'
-# cask 'ngrok'
 
 # Fonts
 cask 'font-fira-code'
@@ -12,10 +11,6 @@ cask 'font-source-code-pro'
 
 # Dev: Go
 brew 'go'
-brew 'glide'
-
-# Dev: Swift
-# brew 'carthage'
 
 # Shell
 brew 'zsh'
@@ -41,6 +36,6 @@ brew 'bat'
 brew 'git'
 brew 'htop'
 brew 'httpie'
-brew 'tmux'
+# brew 'tmux'
 brew 'wget'
 # brew 'wrk'
