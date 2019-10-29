@@ -29,5 +29,8 @@
 	# Usage: git merge-log fd0f5631 | xargs git cherry-pick
 	merge-log = !sh -c 'git log --pretty=format:"%h" "$1~1..$1" | grep -v $1 | tail -r' --
 
+	# Usage: git versions 59dd0fcc
+	versions = !sh -c 'git tag --contains $1 | grep -E "^[0-9]{4}"' --
+
 [include]
 	path = ~/.gitconfig_local
