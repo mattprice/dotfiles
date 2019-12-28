@@ -2,3 +2,4 @@ arc-icon-theme/
 git/gitconfig_local
 karabiner/automatic_backups
 zsh/zshrc_local.zsh
+brew/Brewfile.lock.json
