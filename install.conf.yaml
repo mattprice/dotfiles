@@ -25,12 +25,16 @@
     # Terminal
     ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc.zsh
-    ~/.zshrc_local: zsh/zshrc_local.zsh
+    ~/.zshrc_local:
+      path: zsh/zshrc_local.zsh
+      if: "[[ -f zsh/zshrc_local.zsh ]]"
     ~/.zshenv: zsh/zshenv.zsh
     ~/.zplug: zplug
     ~/.config/htop: htop
     ~/.gitconfig: git/gitconfig
-    ~/.gitconfig_local: git/gitconfig_local
+    ~/.gitconfig_local:
+      path: git/gitconfig_local
+      if: "[[ -f git/gitconfig_local ]]"
     ~/.gitignore_global: git/gitignore_global
 
     # Mac Applications
