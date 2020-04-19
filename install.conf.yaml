@@ -51,6 +51,7 @@
 - shell:
     # Scripts
     - [./scripts/defaults.sh, Configuring macOS settings]
+    - [./scripts/spotlight-ignore.rb, Configuring common Spotlight ignores]
 
     # Node
     - [nodenv install -s 12.10.0, Installing Node 12.10.0]
