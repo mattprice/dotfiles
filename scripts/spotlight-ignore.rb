@@ -12,7 +12,7 @@ blacklist = blacklist.split("\n")[1...-1].each(&:strip!)
 CODE_DIR = File.expand_path('~/Code')
 Dir.glob("#{CODE_DIR}/**/node_modules").each do |dir|
   # Skip nested node_modules folders. They just make the list messier.
-  next unless dir.scan(node_modules).length == 1
+  next unless dir.scan(/node_modules/).length == 1
 
   # Skip folders that are already on the blacklist.
   # This will happen automatically if you open and close the Spotlight
