@@ -6,7 +6,7 @@ VOLUME_CONFIG = '/System/Volumes/Data/.Spotlight-V100/VolumeConfiguration.plist'
 
 # Read the existing blacklist so we don't add duplicates.
 # This is a hacky way of parsing the output from PlistBuddy, but it works.
-blacklist = `#{PLIST_BUDDY} -c 'Print Exclusions' #{VOLUME_CONFIG}`
+blacklist = `#{PLIST_BUDDY} -c 'Print :Exclusions' #{VOLUME_CONFIG}`
 blacklist = blacklist.split("\n")[1...-1].each(&:strip!)
 
 CODE_DIR = File.expand_path('~/Code')
@@ -20,7 +20,7 @@ Dir.glob("#{CODE_DIR}/**/node_modules").each do |dir|
   next if blacklist.include? dir
 
   puts "Adding #{dir}..."
-  system "#{PLIST_BUDDY} -c \"Add Exclusions: string #{dir}\" #{VOLUME_CONFIG}"
+  system "#{PLIST_BUDDY} -c \"Add :Exclusions: string #{dir}\" #{VOLUME_CONFIG}"
 end
 
 # Restart the Spotlight service for everything to take effect.
