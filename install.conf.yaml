@@ -49,10 +49,6 @@
       if: "[[ $(uname -s) == 'Darwin' ]]"
 
 - shell:
-    # Scripts
-    - [./scripts/defaults.sh, Configuring macOS settings]
-    - [./scripts/spotlight-ignore.rb, Configuring common Spotlight ignores]
-
     # Node
     - [nodenv install -s 12.10.0, Installing Node 12.10.0]
     - [nodenv global 12.10.0, Setting default Node version]
@@ -70,3 +66,8 @@
     - [rm gem/Gemfile.lock, Removing gem lockfile]
     - [npm install -g diff-so-fancy, Installing diff-so-fancy]
     - [npm install -g tldr, Installing tldr]
+
+    # Scripts
+    - [./scripts/defaults.sh, Configuring macOS settings]
+    - [./scripts/spotlight-ignore.rb, Configuring common Spotlight ignores]
+    - [./scripts/default-apps.rb, Configuring default applications for files]
