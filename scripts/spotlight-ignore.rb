@@ -1,6 +1,11 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+if RUBY_PLATFORM !~ /darwin/
+  puts '^ Skipped because platform is not macOS.'
+  exit
+end
+
 PLIST_BUDDY = 'sudo /usr/libexec/PlistBuddy'
 VOLUME_CONFIG = '/System/Volumes/Data/.Spotlight-V100/VolumeConfiguration.plist'
 
