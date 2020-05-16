@@ -8,8 +8,8 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 25
 # Enable Finder status bar (Finder -> View -> Show Status Bar)
 defaults write com.apple.finder ShowStatusBar -bool true
 
-# Enable subpixel antialiasing. Starting with Mojave, Apple disables it
-# by default, but that makes fonts look awful on non-Retina displays.
-defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+# Disable font smoothing. Starting with Mojave, Apple change their font
+# smoothing method, but it makes fonts look worse on non-Retina displays.
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
 
 echo "Please log out for settings to take effect."
