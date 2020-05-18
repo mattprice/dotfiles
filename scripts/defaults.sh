@@ -1,3 +1,8 @@
+if [[ $(uname -s) != 'Darwin' ]]; then
+  echo "^ Skipped because platform is not macOS."
+  exit 0
+fi
+
 # Disable accented characters popup (enables key repeat)
 defaults write -g ApplePressAndHoldEnabled -bool false
 
