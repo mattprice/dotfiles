@@ -71,3 +71,4 @@
     - [./scripts/defaults.sh, Configuring macOS settings]
     - [./scripts/spotlight-ignore.rb, Configuring common Spotlight ignores]
     - [./scripts/default-apps.rb, Configuring default applications for files]
+    - [sudo rm /private/var/tmp/WiFiDiagnostics*, Removing WiFiDiagnostics logs]
