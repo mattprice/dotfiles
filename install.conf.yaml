@@ -41,6 +41,9 @@
     ~/.config/karabiner:
       path: karabiner
       if: "[[ $(uname -s) == 'Darwin' ]]"
+    ~/.finicky.js:
+      path: finicky/finicky.js
+      if: "[[ $(uname -s) == 'Darwin' ]]"
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes:
       path: xcode
       if: "[[ $(uname -s) == 'Darwin' ]]"

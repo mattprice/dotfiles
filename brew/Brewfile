@@ -3,6 +3,7 @@ tap 'jonof/kenutils'
 
 # Applications
 cask 'aerial'
+cask 'finicky'
 
 # Fonts
 cask 'font-fira-code'
