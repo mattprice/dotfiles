@@ -17,4 +17,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # smoothing method, but it makes fonts look worse on non-Retina displays.
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
 
+# Dim the Dock icon for apps that are hidden
+defaults write com.apple.Dock showhidden -boolean yes
+
 echo "Please log out for settings to take effect."
