@@ -10,6 +10,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 25
 
+# Set trackpad tracking speed (System Prefs -> Trackpad -> Point & Click)
+defaults write NSGlobalDomain com.apple.trackpad.scaling 0.875
+
 # Enable Finder status bar (Finder -> View -> Show Status Bar)
 defaults write com.apple.finder ShowStatusBar -bool true
 
