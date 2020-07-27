@@ -4,6 +4,7 @@ tap 'jonof/kenutils'
 # Applications
 cask 'aerial'
 cask 'finicky'
+cask 'hammerspoon'
 
 # Fonts
 cask 'font-fira-code'
