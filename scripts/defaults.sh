@@ -23,4 +23,8 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
 # Dim the Dock icon for apps that are hidden
 defaults write com.apple.Dock showhidden -boolean yes
 
+# Skip code folding animation to speed up the Xcode refactoring interface
+# https://twitter.com/dmartincy/status/1173289543124029440?s=20
+defaults write com.apple.dt.Xcode CodeFoldingAnimationSpeed -int 0
+
 echo "Please log out for settings to take effect."
