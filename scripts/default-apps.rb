@@ -21,6 +21,7 @@ DEFAULT_APPS = {
     "rb",
     "scss",
     "sh",
+    "tf",
     "ts",
     "txt",
     "xml",
