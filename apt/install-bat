@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-curl -sOL https://github.com/sharkdp/bat/releases/download/v0.12.1/bat-musl_0.12.1_amd64.deb
-dpkg -i bat-musl_0.12.1_amd64.deb
-rm bat-musl_0.12.1_amd64.deb
+curl -sOL https://github.com/sharkdp/bat/releases/download/v0.18.0/bat-musl_0.18.0_amd64.deb
+dpkg -i bat-musl_0.18.0_amd64.deb
+rm bat-musl_0.18.0_amd64.deb
