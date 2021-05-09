@@ -7,6 +7,7 @@ cask 'finicky'
 cask 'hammerspoon'
 
 # Fonts
+brew 'svn' # Required for fonts (?!)
 cask 'font-fira-code'
 cask 'font-source-code-pro'
 
