@@ -19,7 +19,7 @@ source "${ZPLUG_HOME}/init.zsh"
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug 'mafredri/zsh-async', from:github
-zplug 'sindresorhus/pure', use:pure.zsh, from:github, as:theme
+zplug 'sindresorhus/pure', use:pure.zsh, from:github, at:main, as:theme
 zplug 'zsh-users/zsh-autosuggestions', from:github
 zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 
