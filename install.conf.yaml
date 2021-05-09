@@ -56,8 +56,8 @@
 
 - shell:
     # Node
-    - [nodenv install -s 12.10.0, Installing Node 12.10.0]
-    - [nodenv global 12.10.0, Setting default Node version]
+    - [nodenv install -s 14.15.4, Installing Node 14.15.4]
+    - [nodenv global 14.15.4, Setting default Node version]
     - [npm install -g npm, Updating NPM]
     - [npm install -g yarn, Installing Yarn]
 
