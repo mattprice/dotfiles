@@ -131,7 +131,8 @@ function todo() {
       --group \
       --color \
       --sort-files "\b(TODO|FIX(ME)?|OPTIMIZE|BUG)(\(\w+\))?: (.*)" \
-      --ignore-dir={.git,node_modules,vendor,Pods} \
+      --ignore-dir={.git,.next,build,node_modules,vendor,Pods} \
+      --ignore-file=is:.eslintcache \
       | perl -pe "s/:/\t/" \
       | perl -pe "s/\t(\w+)(\(\w+\))?:(.*)/\t\$1:\$3 \$2/"
 }
