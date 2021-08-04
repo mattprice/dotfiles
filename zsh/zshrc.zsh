@@ -73,8 +73,8 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gp="git pull --rebase=merges --autostash"
 alias gs="git status"
 
-if command -v gittower > /dev/null; then
-  alias gt="gittower ."
+if command -v fork > /dev/null; then
+  alias gt="fork ."
 elif command -v github > /dev/null; then
   alias gt="github ."
 elif command -v gitg > /dev/null; then
