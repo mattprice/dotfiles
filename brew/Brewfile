@@ -5,6 +5,7 @@ tap 'jonof/kenutils'
 cask 'aerial'
 cask 'finicky'
 cask 'hammerspoon'
+cask 'notunes'
 
 # Fonts
 brew 'svn' # Required for fonts (?!)
@@ -45,6 +46,8 @@ brew 'duti'
 brew 'git'
 brew 'htop'
 brew 'httpie'
+brew 'rename'
+brew 'rg'
 # brew 'tmux'
 brew 'wget'
 # brew 'wrk'
