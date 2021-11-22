@@ -60,6 +60,7 @@
     - [nodenv global 16.13.1, Setting default Node version]
     - [npm install -g npm, Updating NPM]
     - [npm install -g yarn, Installing Yarn]
+    - [npm install -g npm-merge-driver, Installing npm-merge-driver]
 
     # Ruby
     - [rbenv install -s 2.7.5, Installing Ruby 2.7.5]
