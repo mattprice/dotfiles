@@ -62,8 +62,8 @@
     - [npm install -g yarn, Installing Yarn]
 
     # Ruby
-    - [rbenv install -s 2.6.5, Installing Ruby 2.6.5]
-    - [rbenv global 2.6.5, Setting default Ruby version]
+    - [rbenv install -s 2.7.5, Installing Ruby 2.7.5]
+    - [rbenv global 2.7.5, Setting default Ruby version]
     - [gem install bundler, Installing Bundler]
 
     # Terminal
