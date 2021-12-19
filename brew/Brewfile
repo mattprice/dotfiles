@@ -4,7 +4,7 @@ tap 'jonof/kenutils'
 # Applications
 cask 'aerial'
 cask 'finicky'
-cask 'hammerspoon'
+# cask 'hammerspoon'
 cask 'notunes'
 
 # Fonts
@@ -18,14 +18,19 @@ cask 'qlstephen'
 cask 'quicklook-json'
 cask 'suspicious-package'
 
-# Dev: Go
+# Go
 brew 'go'
+
+# Node
+brew 'watchman'
+
+# Swift
+brew 'swiftformat'
 
 # Shell
 brew 'zsh'
 brew 'shellcheck'
 brew 'fzy'
-brew 'tldr'
 
 # Images/Videos
 brew 'ffmpeg'
@@ -38,6 +43,7 @@ brew 'optipng'
 brew 'pngcrush'
 brew 'pngquant'
 brew 'youtube-dl'
+# brew 'mkvtoolnix'
 
 # Miscellaneous
 brew 'ack'
