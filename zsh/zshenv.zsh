@@ -1,6 +1,7 @@
 # Do not go where the path may lead, go instead where there is
 # no path and leave a trail. — Ralph Waldo Emerson
 export PATH="/usr/local/bin:/usr/local/sbin:${PATH}" # Homebrew
+export PATH="/opt/homebrew/bin:${PATH}" # Homebrew
 
 # Node
 export PATH="${HOME}/.nodenv/bin:${PATH}"
