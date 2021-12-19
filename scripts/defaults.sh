@@ -18,7 +18,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 
 # Disable font smoothing. Starting with Mojave, Apple change their font
 # smoothing method, but it makes fonts look worse on non-Retina displays.
-defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
+# defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
 
 # Dim the Dock icon for apps that are hidden
 defaults write com.apple.Dock showhidden -boolean yes
