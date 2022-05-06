@@ -2,6 +2,7 @@
 # no path and leave a trail. — Ralph Waldo Emerson
 export PATH="/usr/local/bin:/usr/local/sbin:${PATH}" # Homebrew
 export PATH="/opt/homebrew/bin:${PATH}" # Homebrew
+export PATH="${HOME}/.rd/bin:${PATH}" # Rancher Desktop
 
 # Node
 export PATH="${HOME}/.nodenv/bin:${PATH}"
