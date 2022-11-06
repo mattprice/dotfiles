@@ -3,7 +3,7 @@ tap 'jonof/kenutils'
 
 # Applications
 cask 'aerial'
-cask 'finicky'
+# cask 'finicky'
 # cask 'hammerspoon'
 cask 'notunes'
 

@@ -41,9 +41,6 @@
     ~/.config/karabiner:
       path: karabiner
       if: "[[ $(uname -s) == 'Darwin' ]]"
-    ~/.finicky.js:
-      path: finicky/finicky.js
-      if: "[[ $(uname -s) == 'Darwin' ]]"
     ~/.hammerspoon:
       path: hammerspoon
       if: "[[ $(uname -s) == 'Darwin' ]]"
