@@ -34,7 +34,6 @@
 
 - shell:
     - [./apt/install-bat, Installing bat]
-    - [./apt/install-source-code-pro, Installing Source Code Pro font]
     - command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       description: Adding Flathub repository to Flatpak
 

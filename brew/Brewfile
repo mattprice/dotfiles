@@ -8,9 +8,7 @@ cask 'aerial'
 cask 'notunes'
 
 # Fonts
-brew 'svn' # Required for fonts (?!)
 cask 'font-fira-code'
-cask 'font-source-code-pro'
 
 # QuickLook
 cask 'qlmarkdown'
