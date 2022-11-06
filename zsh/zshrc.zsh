@@ -27,11 +27,6 @@ zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 
 zplug load
 
-# Google Cloud SDK Autocompletion
-if [[ -d "$HOME/Code/google-cloud-sdk/" ]]; then
-  source "${HOME}/Code/google-cloud-sdk/completion.zsh.inc"
-fi
-
 ### BAT SETTINGS ###
 export BAT_THEME="TwoDark"
 
