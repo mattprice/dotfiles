@@ -17,5 +17,9 @@ export GOPATH="${HOME}/Code/Go"
 export GOBIN="${GOPATH}/bin"
 export PATH="${GOBIN}:${PATH}"
 
+if [[ -f "${HOME}/.zshenv_local" ]]; then
+  source "${HOME}/.zshenv_local"
+fi
+
 # Disable global profiles, which overwrite our PATH
 setopt no_global_rcs
