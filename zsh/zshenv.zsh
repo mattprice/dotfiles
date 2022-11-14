@@ -1,7 +1,7 @@
 # Do not go where the path may lead, go instead where there is
 # no path and leave a trail. — Ralph Waldo Emerson
-export PATH="/usr/local/bin:/usr/local/sbin:${PATH}" # Homebrew
-export PATH="/opt/homebrew/bin:${PATH}" # Homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:${PATH}" # Homebrew x86
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}" # Homebrew ARM
 export PATH="${HOME}/.rd/bin:${PATH}" # Rancher Desktop
 
 # Node
