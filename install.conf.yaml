@@ -23,7 +23,6 @@
     ~/.rbenv/plugins/ruby-build: ruby-build
 
     # Terminal
-    ~/.tmux.conf: tmux/tmux.conf
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zshrc_local:
       path: zsh/zshrc_local.zsh

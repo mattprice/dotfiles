@@ -98,23 +98,6 @@ function merge() {
   trim montage.png
 }
 
-# Open, edit, or delete the Tmuxinator project for the current folder
-# https://mattprice.me/2018/quickly-open-tmuxinator-project/
-function mux() {
-  project=$(pwd | xargs basename)
-
-  if [ "$*" = "" ]; then
-    tmuxinator start "$project"
-  elif [ "$*" = "edit" ]; then
-    tmuxinator edit "$project"
-  elif [ "$*" = "delete" ]; then
-    tmuxinator delete "$project"
-  else
-    # Let unknown commands fall-through
-    tmuxinator "$*"
-  fi
-}
-
 # Grab 10 evenly spaced images from the inputted video file
 # https://stackoverflow.com/a/24563686
 function screengrab() {
