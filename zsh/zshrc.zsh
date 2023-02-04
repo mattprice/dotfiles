@@ -29,7 +29,7 @@ zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 zplug load
 
 ### BAT SETTINGS ###
-export BAT_THEME="TwoDark"
+export BAT_THEME="Dracula"
 
 ### KEY BINDINGS ###
 case $TERM in (xterm*)
