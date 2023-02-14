@@ -1,5 +1,7 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  # Fig pre block. Keep at the top of this file.
+  [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+fi
 
 ### ZSH SETTINGS ###
 export EDITOR="code -w"
@@ -17,16 +19,18 @@ setopt inc_append_history # Immediately append to the history file
 setopt share_history # Share history across terminal windows
 
 ### ZSH PLUGINS ###
-export ZPLUG_HOME="${HOME}/.zplug"
-source "${ZPLUG_HOME}/init.zsh"
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  export ZPLUG_HOME="${HOME}/.zplug"
+  source "${ZPLUG_HOME}/init.zsh"
 
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug 'mafredri/zsh-async'
-zplug 'sindresorhus/pure', use:pure.zsh, at:main, as:theme
-zplug 'zsh-users/zsh-autosuggestions'
-zplug 'zsh-users/zsh-syntax-highlighting', defer:2
+  zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+  zplug 'mafredri/zsh-async'
+  zplug 'sindresorhus/pure', use:pure.zsh, at:main, as:theme
+  zplug 'zsh-users/zsh-autosuggestions'
+  zplug 'zsh-users/zsh-syntax-highlighting', defer:2
 
-zplug load
+  zplug load
+fi
 
 ### BAT SETTINGS ###
 export BAT_THEME="Dracula"
@@ -151,5 +155,7 @@ if [[ -f "${HOME}/.zshrc_local" ]]; then
   source "${HOME}/.zshrc_local"
 fi
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  # Fig post block. Keep at the bottom of this file.
+  [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+fi
