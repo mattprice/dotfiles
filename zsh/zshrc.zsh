@@ -1,8 +1,3 @@
-if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-  # Fig pre block. Keep at the top of this file.
-  [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-fi
-
 ### ZSH SETTINGS ###
 export EDITOR="code -w"
 export CLICOLOR=1
@@ -153,9 +148,4 @@ function wo() {
 
 if [[ -f "${HOME}/.zshrc_local" ]]; then
   source "${HOME}/.zshrc_local"
-fi
-
-if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-  # Fig post block. Keep at the bottom of this file.
-  [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 fi
