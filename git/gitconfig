@@ -29,8 +29,13 @@
 	# Usage: git merge-log fd0f5631 | xargs git cherry-pick
 	merge-log = !sh -c 'git log --pretty=format:"%h" "$1~1..$1" | grep -v $1 | tail -r' --
 
+	# Lists the tags (versions) that contain a commit
 	# Usage: git versions 59dd0fcc
-	versions = !sh -c 'git tag --contains $1 | grep -E "^[0-9]{4}"' --
+	versions = !sh -c 'git tag --contains $1 | grep -E "^v"' --
+
+	# Searches files that are not excluded by .gitignore
+	# Usage: git ack "something"
+	ack = ! git ls-files --others --cached --exclude-standard | ack -x
 
 [include]
 	path = ~/.gitconfig_local
