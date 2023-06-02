@@ -55,15 +55,15 @@
 
 - shell:
     # Node
-    - [nodenv install -s 16.13.1, Installing Node 16.13.1]
-    - [nodenv global 16.13.1, Setting default Node version]
+    - [nodenv install -s 18.16.0, Installing Node 18.16.0]
+    - [nodenv global 18.16.0, Setting default Node version]
     - [npm install -g npm, Updating NPM]
     - [npm install -g yarn, Installing Yarn]
     - [npm install -g npm-merge-driver, Installing npm-merge-driver]
 
     # Ruby
-    - [rbenv install -s 2.7.5, Installing Ruby 2.7.5]
-    - [rbenv global 2.7.5, Setting default Ruby version]
+    - [rbenv install -s 3.2.2, Installing Ruby 3.2.2]
+    - [rbenv global 3.2.2, Setting default Ruby version]
     - [gem install bundler, Installing Bundler]
 
     # Terminal
