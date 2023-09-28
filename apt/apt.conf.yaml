@@ -4,12 +4,11 @@
 - aptget:
     - ack
     - curl
-    - gnome-software-plugin-flatpak
+    - git
     - httpie
     - htop
+    - ripgrep
     - shellcheck
-    # - tmux
-    - fonts-firacode
     - zsh
     - fzy
 
@@ -20,26 +19,5 @@
     - libreadline-dev # ruby-build
     - zlib1g-dev # ruby-build
 
-    # Themes
-    - vanilla-gnome-desktop
-    - gnome-tweaks
-
-- aptget:
-    flatpak: ppa:alexlarsson/flatpak
-    git: ppa:git-core/ppa
-
-    # Themes
-    arc-theme: ppa:fossfreedom/arc-gtk-theme-daily
-    papirus-icon-theme: ppa:papirus/papirus
-
 - shell:
     - [./apt/install-bat, Installing bat]
-    - command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-      description: Adding Flathub repository to Flatpak
-
-    # Themes
-    - [./apt/install-arc-icon-theme, Installing Arc icon theme]
-    - command: sudo sed -i.orig 's/white/#d3dae3/g' /usr/share/themes/Arc-Dark/gnome-shell/gnome-shell.css
-      description: Adjusting Arc icon color
-    - command: sudo sed -i.orig 's/Inherits=Moka/Inherits=Papirus-Light/' /usr/share/icons/Arc/index.theme
-      description: Changing Arc icon fallback theme
