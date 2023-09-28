@@ -55,10 +55,9 @@
 
 - shell:
     # Node
-    - [nodenv install -s 18.16.0, Installing Node 18.16.0]
-    - [nodenv global 18.16.0, Setting default Node version]
+    - [nodenv install -s 18.18.0, Installing Node 18.18.0]
+    - [nodenv global 18.18.0, Setting default Node version]
     - [npm install -g npm, Updating NPM]
-    - [npm install -g yarn, Installing Yarn]
     - [npm install -g npm-merge-driver, Installing npm-merge-driver]
 
     # Ruby
