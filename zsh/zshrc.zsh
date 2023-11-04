@@ -72,8 +72,6 @@ alias gs="git status"
 
 if command -v fork > /dev/null; then
   alias gt="fork ."
-elif command -v github > /dev/null; then
-  alias gt="github ."
 elif command -v gitg > /dev/null; then
   alias gt="gitg --commit < /dev/null &> /dev/null &"
 fi
@@ -111,7 +109,7 @@ function todo() {
       --group \
       --color \
       --sort-files "\b(TODO|FIX(ME)?|OPTIMIZE|BUG)(\(\w+\))?: (.*)" \
-      --ignore-dir={.git,.next,build,node_modules,vendor,Pods} \
+      --ignore-dir={.git,.next,build,dist,node_modules,vendor,Pods} \
       --ignore-file=is:.eslintcache \
       | perl -pe "s/:/\t/" \
       | perl -pe "s/\t(\w+)(\(\w+\))?:(.*)/\t\$1:\$3 \$2/"

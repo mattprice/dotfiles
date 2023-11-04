@@ -2,7 +2,6 @@ tap 'homebrew/cask-fonts'
 tap 'jonof/kenutils'
 
 # Applications
-cask 'aerial'
 # cask 'finicky'
 # cask 'hammerspoon'
 cask 'notunes'
@@ -16,14 +15,11 @@ cask 'qlstephen'
 cask 'quicklook-json'
 cask 'suspicious-package'
 
-# Go
-brew 'go'
-
 # Node
 brew 'watchman'
 
 # Swift
-brew 'swiftformat'
+# brew 'swiftformat'
 
 # Shell
 brew 'zsh'
@@ -54,6 +50,5 @@ brew 'httpie'
 brew 'rename'
 brew 'tldr'
 brew 'rg'
-# brew 'tmux'
 brew 'wget'
 # brew 'wrk'
