@@ -16,5 +16,8 @@ if [[ -f "${HOME}/.zshenv_local" ]]; then
   source "${HOME}/.zshenv_local"
 fi
 
-# Disable global profiles, which overwrite our PATH
+# Ubuntu: Stop compinit from being run twice, since our zshrc already runs it
+export skip_global_compinit=1
+
+# macOS: Disable global profiles, which overwrite our PATH
 setopt no_global_rcs
