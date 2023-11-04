@@ -72,8 +72,12 @@ alias gs="git status"
 
 if command -v fork > /dev/null; then
   alias gt="fork ."
-elif command -v gitg > /dev/null; then
-  alias gt="gitg --commit < /dev/null &> /dev/null &"
+else
+  function gt() {
+    target="\\\wsl.localhost\Ubuntu$(realpath . | sed 's/\//\\/g')"
+    # Wrapped in a subshell so it doesn't print the job ID after backgrounding
+    ("/mnt/c/Users/$USER/AppData/Local/Fork/Fork.exe" "$target" &)
+  }
 fi
 
 # CD to the path of the frontmost Finder window
