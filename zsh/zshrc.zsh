@@ -19,10 +19,11 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   source "${ZPLUG_HOME}/init.zsh"
 
   zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-  zplug 'mafredri/zsh-async'
-  zplug 'sindresorhus/pure', use:pure.zsh, at:main, as:theme
-  zplug 'zsh-users/zsh-autosuggestions'
-  zplug 'zsh-users/zsh-syntax-highlighting', defer:2
+  zplug 'mafredri/zsh-async', at:main, use:async.zsh
+  zplug 'sindresorhus/pure', at:main, use:pure.zsh, as:theme
+  zplug 'zdharma-continuum/fast-syntax-highlighting', defer:2
+  zplug 'zsh-users/zsh-autosuggestions', defer:3
+  zplug 'zsh-users/zsh-history-substring-search', defer:3
 
   zplug load
 fi
@@ -32,17 +33,19 @@ export BAT_THEME="Dracula"
 
 ### KEY BINDINGS ###
 case $TERM in (xterm*)
-  bindkey '\e[H' beginning-of-line  # Home (xterm)
-  bindkey '\e[F' end-of-line        # End (xterm)
+  bindkey '\e[H' beginning-of-line           # Home (xterm)
+  bindkey '\e[F' end-of-line                 # End (xterm)
 esac
-bindkey '\e[1~' beginning-of-line   # Home
-bindkey '\e[4~' end-of-line         # End
-bindkey '\e[3~' delete-char         # Delete
-bindkey '\e[5~' insert-last-word    # Page Up
-bindkey '\e[6~' end-of-history      # Page Down
-bindkey '\e[2~' redisplay           # Insert
-bindkey '^[[1;9C' forward-word      # Alt + Right
-bindkey '^[[1;9D' backward-word     # Alt + Left
+bindkey '^[[A' history-substring-search-up   # Up
+bindkey '^[[B' history-substring-search-down # Down
+bindkey '\e[1~' beginning-of-line            # Home
+bindkey '\e[4~' end-of-line                  # End
+bindkey '\e[3~' delete-char                  # Delete
+bindkey '\e[5~' insert-last-word             # Page Up
+bindkey '\e[6~' end-of-history               # Page Down
+bindkey '\e[2~' redisplay                    # Insert
+bindkey '^[[1;9C' forward-word               # Alt + Right
+bindkey '^[[1;9D' backward-word              # Alt + Left
 
 ### ALIASES ###
 ## General Aliases
