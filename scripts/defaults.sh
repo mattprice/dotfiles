@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if [[ $(uname -s) != 'Darwin' ]]; then
   echo "^ Skipped because platform is not macOS."
   exit 0

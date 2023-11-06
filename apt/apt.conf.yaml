@@ -19,6 +19,7 @@
     - libssl-dev # ruby-build
     - libreadline-dev # ruby-build
     - zlib1g-dev # ruby-build
+    - libyaml-dev # ruby-build
 
 - shell:
     - [./apt/install-bat, Installing bat]
