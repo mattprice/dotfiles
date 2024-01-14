@@ -52,6 +52,11 @@ bindkey '\e[2~' redisplay          # Insert
 bindkey '^[[1;9C' forward-word     # Alt + Right
 bindkey '^[[1;9D' backward-word    # Alt + Left
 
+# Edit the current Terminal input in $EDITOR
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line   # Ctrl + X, Ctrl + E
+
 ### ALIASES ###
 ## General Aliases
 alias cx="chmod +x"
@@ -159,3 +164,5 @@ function wo() {
 if [[ -f "${HOME}/.zshrc_local" ]]; then
   source "${HOME}/.zshrc_local"
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
