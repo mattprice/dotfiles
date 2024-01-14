@@ -36,7 +36,7 @@ brew 'jpegoptim'
 brew 'optipng'
 brew 'pngcrush'
 brew 'pngquant'
-brew 'youtube-dl'
+brew 'yt-dlp'
 # brew 'mkvtoolnix'
 
 # Miscellaneous

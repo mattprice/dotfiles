@@ -60,7 +60,7 @@ alias rm_dsstore="find . -name '*.DS_Store' -type f -delete" # Recursively delet
 alias sha1="openssl dgst -sha1"
 alias sha256="openssl dgst -sha256"
 alias trim='mogrify -trim' # Trim whitespace around images
-alias youtube='youtube-dl -f mp4/flv -o "%(title)s.%(ext)s" --recode-video mp4' # 37/38/22/18
+alias youtube='yt-dlp -f mp4/flv -o "%(title)s.%(ext)s" --recode-video mp4' # 37/38/22/18
 
 if [[ $(uname -s) == 'Darwin' ]]; then
   alias lx="ls -lAhGp"
