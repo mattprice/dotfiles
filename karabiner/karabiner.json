@@ -53,7 +53,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -80,7 +81,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -107,7 +109,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -134,7 +137,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -161,7 +165,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -188,7 +193,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -215,7 +221,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -242,7 +249,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -269,7 +277,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -296,7 +305,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -323,7 +333,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -350,7 +361,8 @@
                                             "com.googlecode.iterm2",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
-                                            "com.moonlight-stream.Moonlight"
+                                            "com.moonlight-stream.Moonlight",
+                                            "com.microsoft.rdc.macos"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
