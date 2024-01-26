@@ -23,3 +23,6 @@
 
 - shell:
     - [./apt/install-bat, Installing bat]
+
+- aptget:
+    git: ppa:git-core/ppa
