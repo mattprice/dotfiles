@@ -5,6 +5,12 @@
 [credential]
 	helper = osxkeychain
 
+[github]
+	user = mattprice
+
+[diff]
+	algorithm = histogram
+
 [fetch]
 	prune = true
 	pruneTags = true
@@ -16,8 +22,9 @@
 [push]
 	default = simple
 
-[github]
-	user = mattprice
+[merge "npm-merge-driver"]
+	name = automatically merge npm lockfiles
+	driver = npx npm-merge-driver merge %A %O %B %P
 
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
@@ -40,6 +47,3 @@
 [include]
 	path = ~/.gitconfig_local
 
-[merge "npm-merge-driver"]
-	name = automatically merge npm lockfiles
-	driver = npx npm-merge-driver merge %A %O %B %P
