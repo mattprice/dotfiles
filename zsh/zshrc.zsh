@@ -62,6 +62,7 @@ bindkey "^X^E" edit-command-line   # Ctrl + X, Ctrl + E
 alias cx="chmod +x"
 alias ip="curl -L http://icanhazip.com/"
 alias rm_dsstore="find . -name '*.DS_Store' -type f -delete" # Recursively delete .DS_Store files
+alias rm_node="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +" # Recursively delete node_modules
 alias sha1="openssl dgst -sha1"
 alias sha256="openssl dgst -sha256"
 alias trim='mogrify -trim' # Trim whitespace around images
