@@ -64,7 +64,7 @@
     # Ruby
     - [rbenv install -s 3.2.2, Installing Ruby 3.2.2]
     - [rbenv global 3.2.2, Setting default Ruby version]
-    - [gem install bundler, Installing Bundler]
+    - [gem update --system, Updating RubyGems]
 
     # Terminal
     - [bundle install --system --gemfile=gem/Gemfile, Installing gems]
