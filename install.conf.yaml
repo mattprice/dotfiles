@@ -14,14 +14,6 @@
     - [git submodule update --init --recursive, Installing submodules]
 
 - link:
-    # Node
-    ~/.nodenv: nodenv
-    ~/.nodenv/plugins/node-build: node-build
-
-    # Ruby
-    ~/.rbenv: rbenv
-    ~/.rbenv/plugins/ruby-build: ruby-build
-
     # Terminal
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zshrc_local:
@@ -35,6 +27,7 @@
       path: git/gitconfig_local
       if: "[[ -f git/gitconfig_local ]]"
     ~/.gitignore_global: git/gitignore_global
+    ~/.config/mise/config.toml: mise/mise.toml
 
     # Mac Applications
     ~/.config/karabiner:
@@ -54,24 +47,8 @@
       if: "[[ $(uname -s) == 'Darwin' ]]"
 
 - shell:
-    # Node
-    - [nodenv install -s 20.12.1, Installing Node 20.12.1]
-    - [nodenv global 20.12.1, Setting default Node version]
-    - [npm install -g npm, Updating npm]
-    - [npm install -g pnpm, Installing pnpm]
-    - [npm install -g npm-merge-driver, Installing npm-merge-driver]
+    - [mise install, Installing Mise tools]
 
-    # Ruby
-    - [rbenv install -s 3.2.2, Installing Ruby 3.2.2]
-    - [rbenv global 3.2.2, Setting default Ruby version]
-    - [gem update --system, Updating RubyGems]
-
-    # Terminal
-    - [bundle install --system --gemfile=gem/Gemfile, Installing gems]
-    - [rm gem/Gemfile.lock, Removing gem lockfile]
-    - [npm install -g diff-so-fancy, Installing diff-so-fancy]
-
-    # Scripts
     - [./scripts/defaults.sh, Configuring macOS settings]
     - [./scripts/spotlight-ignore.rb, Configuring common Spotlight ignores]
     - [./scripts/default-apps.rb, Configuring default applications for files]

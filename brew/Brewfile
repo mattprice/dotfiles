@@ -15,12 +15,6 @@ cask 'qlstephen'
 cask 'quicklook-json'
 cask 'suspicious-package'
 
-# Node
-brew 'watchman'
-
-# Swift
-# brew 'swiftformat'
-
 # Shell
 brew 'zsh'
 brew 'shellcheck'
@@ -47,6 +41,7 @@ brew 'duti'
 brew 'git'
 brew 'htop'
 brew 'httpie'
+brew 'mise'
 brew 'rename'
 brew 'tldr'
 brew 'rg'

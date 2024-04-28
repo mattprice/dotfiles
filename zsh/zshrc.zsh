@@ -35,6 +35,8 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   zinit light zsh-users/zsh-autosuggestions
 fi
 
+eval "$(mise activate zsh)"
+
 ### BAT SETTINGS ###
 export BAT_THEME="Dracula"
 

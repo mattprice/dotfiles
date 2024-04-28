@@ -4,7 +4,6 @@
 - aptget:
     - ack
     - bat
-    - curl
     - httpie
     - htop
     - imagemagick
@@ -12,6 +11,11 @@
     - shellcheck
     - zsh
     - fzy
+
+    # Essentials
+    - curl
+    - gpg
+    - wget
 
     # Build Tools
     - autoconf
@@ -23,3 +27,6 @@
 
 - aptget:
     git: ppa:git-core/ppa
+
+- shell:
+    - [./apt/install-mise, Installing Mise]

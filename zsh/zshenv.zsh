@@ -2,15 +2,7 @@
 # no path and leave a trail. — Ralph Waldo Emerson
 export PATH="/usr/local/bin:/usr/local/sbin:${PATH}" # Homebrew x86
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}" # Homebrew ARM
-# export PATH="${HOME}/.rd/bin:${PATH}" # Rancher Desktop
-
-# Node
-export PATH="${HOME}/.nodenv/bin:${PATH}"
-eval "$(nodenv init -)"
-
-# Ruby
-export PATH="${HOME}/.rbenv/bin:${PATH}"
-eval "$(rbenv init -)"
+export PATH="$HOME/.local/share/mise/shims:$PATH" # Mise
 
 if [[ -f "${HOME}/.zshenv_local" ]]; then
   source "${HOME}/.zshenv_local"
