@@ -10,9 +10,6 @@
 
 - clean: ["~"]
 
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
-
 - link:
     # Terminal
     ~/.zshrc: zsh/zshrc.zsh
@@ -20,7 +17,6 @@
       path: zsh/zshrc_local.zsh
       if: "[[ -f zsh/zshrc_local.zsh ]]"
     ~/.zshenv: zsh/zshenv.zsh
-    ~/.zinit/zinit.git: zinit
     ~/.config/htop: htop
     ~/.gitconfig: git/gitconfig
     ~/.gitconfig_local:

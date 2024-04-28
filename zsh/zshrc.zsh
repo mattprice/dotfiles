@@ -17,9 +17,10 @@ setopt share_history # Share history across terminal windows
 # Use `zinit update` to update all plugins
 # Use `zinit delete --clean` to cleanup files on disk after removing a plugin
 if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-  declare -A ZINIT
-  ZINIT[HOME_DIR]="${HOME}/.zinit"
-  source "${ZINIT[HOME_DIR]}/zinit.git/zinit.zsh"
+  ZINIT_HOME="${HOME}/.local/share/zinit/zinit.git"
+  [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+  [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+  source "${ZINIT_HOME}/zinit.zsh"
 
   zinit ice pick"async.zsh" src"pure.zsh"
   zinit light sindresorhus/pure
