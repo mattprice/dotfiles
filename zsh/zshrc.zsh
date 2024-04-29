@@ -29,9 +29,17 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   zinit ice wait"1" lucid
   zinit light zdharma-continuum/history-search-multi-word
 
+  zinit ice wait lucid
+  zinit light grigorii-zander/zsh-npm-scripts-autocomplete
+
+  zinit ice wait lucid atclone"mise completions zsh > mise.zsh" \
+    pick"mise.zsh" nocompile"!" id-as"mise"
+  zinit light zdharma-continuum/null
+
   zinit ice wait lucid atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay"
   zinit light zdharma-continuum/fast-syntax-highlighting
 
+  ZSH_AUTOSUGGEST_STRATEGY=(history completion)
   zinit ice wait lucid atload"_zsh_autosuggest_start"
   zinit light zsh-users/zsh-autosuggestions
 fi
@@ -62,7 +70,6 @@ bindkey "^X^E" edit-command-line   # Ctrl + X, Ctrl + E
 
 ### ALIASES ###
 ## General Aliases
-alias cx="chmod +x"
 alias ip="curl -L http://icanhazip.com/"
 alias rm_dsstore="find . -name '*.DS_Store' -type f -delete" # Recursively delete .DS_Store files
 alias rm_node="find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;" # Recursively delete node_modules
