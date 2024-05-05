@@ -1,8 +1,8 @@
-### ZSH SETTINGS ###
 export EDITOR="code -w"
 export CLICOLOR=1
+export BAT_THEME="base16"
 
-# History File
+### ZSH SETTINGS ###
 HISTFILE=~/.zsh_history
 HISTSIZE=1000 # Lines of history to keep in memory for current session
 SAVEHIST=1000 # Number of history entries to save to disk
@@ -52,9 +52,6 @@ fi
 
 eval "$(mise activate zsh)"
 
-### BAT SETTINGS ###
-export BAT_THEME="Dracula"
-
 ### KEY BINDINGS ###
 case $TERM in (xterm*)
   bindkey '\e[H' beginning-of-line # Home (xterm)
@@ -88,6 +85,7 @@ if [[ $(uname -s) == 'Darwin' ]]; then
   alias lx="ls -lAhGp"
 else
   alias lx="ls --color=always -lAhGp"
+  alias bat="batcat"
   alias open="xdg-open"
 fi
 
