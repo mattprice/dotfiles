@@ -17,8 +17,9 @@ cask 'suspicious-package'
 
 # Shell
 brew 'zsh'
-brew 'shellcheck'
+brew 'eza'
 brew 'fzy'
+brew 'shellcheck'
 
 # Images/Videos
 brew 'ffmpeg'

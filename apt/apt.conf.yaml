@@ -2,20 +2,25 @@
 # https://github.com/dein0s/dotbot_plugin_aptget
 
 - aptget:
+    - curl
+    - gpg
+    - wget
+
+- shell:
+    - [./apt/add-sources, Adding additional sources]
+
+- aptget:
     - ack
     - bat
+    - eza
     - httpie
     - htop
     - imagemagick
+    - mise
     - ripgrep
     - shellcheck
     - zsh
     - fzy
-
-    # Essentials
-    - curl
-    - gpg
-    - wget
 
     # Build Tools
     - autoconf
@@ -27,6 +32,3 @@
 
 - aptget:
     git: ppa:git-core/ppa
-
-- shell:
-    - [./apt/install-mise, Installing Mise]

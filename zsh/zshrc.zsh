@@ -80,11 +80,11 @@ alias sha1="openssl dgst -sha1"
 alias sha256="openssl dgst -sha256"
 alias trim='mogrify -trim' # Trim whitespace around images
 alias youtube='yt-dlp -f mp4/flv -o "%(title)s.%(ext)s" --recode-video mp4' # 37/38/22/18
+alias la="eza -1aF --group-directories-first"
+alias ll="eza -lahF --group-directories-first --git"
+alias lx="ll"
 
-if [[ $(uname -s) == 'Darwin' ]]; then
-  alias lx="ls -lAhGp"
-else
-  alias lx="ls --color=always -lAhGp"
+if [[ $(uname -s) != 'Darwin' ]]; then
   alias bat="batcat"
   alias open="xdg-open"
 fi
