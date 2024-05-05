@@ -29,8 +29,14 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   zinit ice wait"1" lucid
   zinit light zdharma-continuum/history-search-multi-word
 
+  zinit ice wait lucid blockf atpull'zinit creinstall -q .'
+  zinit light zsh-users/zsh-completions
+
   zinit ice wait lucid
   zinit light grigorii-zander/zsh-npm-scripts-autocomplete
+
+  # zinit ice wait lucid atclone"./zplug.zsh" atpull"%atclone"
+  # zinit light g-plane/pnpm-shell-completion
 
   zinit ice wait lucid atclone"mise completions zsh > mise.zsh" \
     pick"mise.zsh" nocompile"!" id-as"mise"
