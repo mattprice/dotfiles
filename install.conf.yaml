@@ -24,6 +24,8 @@
       if: "[[ -f git/gitconfig_local ]]"
     ~/.gitignore_global: git/gitignore_global
     ~/.config/mise/config.toml: mise/mise.toml
+    ~/.default-npm-packages: mise/default-npm-packages
+    ~/.default-gems: mise/default-gems
 
     # Mac Applications
     ~/.config/karabiner:

@@ -23,14 +23,7 @@ brew 'shellcheck'
 
 # Images/Videos
 brew 'ffmpeg'
-brew 'graphviz'
-brew 'guetzli'
 brew 'imagemagick'
-brew 'jonof/kenutils/pngout'
-brew 'jpegoptim'
-brew 'optipng'
-brew 'pngcrush'
-brew 'pngquant'
 brew 'yt-dlp'
 # brew 'mkvtoolnix'
 
