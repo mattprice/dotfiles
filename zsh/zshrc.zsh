@@ -38,8 +38,8 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   # zinit ice wait lucid atclone"./zplug.zsh" atpull"%atclone"
   # zinit light g-plane/pnpm-shell-completion
 
-  zinit ice wait lucid atclone"mise completions zsh > mise.zsh" \
-    pick"mise.zsh" nocompile"!" id-as"mise"
+  zinit ice wait lucid atclone"mise completions zsh > mise.zsh" atpull"%atclone" \
+    run-atpull pick"mise.zsh" nocompile"!" id-as"mise"
   zinit light zdharma-continuum/null
 
   zinit ice wait lucid atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay"
@@ -173,6 +173,20 @@ function wo() {
     fi
 
     cd -P "${project_dir}/${project_matches}" || exit
+  fi
+}
+
+function update() {
+  if [[ $(uname -s) == 'Darwin' ]]; then
+    brew upgrade --greedy
+  else
+    sudo apt update && sudo apt upgrade -y
+  fi
+
+  mise up
+
+  if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+    zinit update
   fi
 }
 
