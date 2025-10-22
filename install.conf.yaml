@@ -34,9 +34,6 @@
     ~/.hammerspoon:
       path: hammerspoon
       if: "[[ $(uname -s) == 'Darwin' ]]"
-    ~/.warp/themes:
-      path: warp
-      if: "[[ $(uname -s) == 'Darwin' ]]"
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes:
       path: xcode
       if: "[[ $(uname -s) == 'Darwin' ]]"

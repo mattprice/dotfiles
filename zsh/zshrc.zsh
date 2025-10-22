@@ -16,39 +16,37 @@ setopt share_history # Share history across terminal windows
 ### ZSH PLUGINS ###
 # Use `zinit update` to update all plugins
 # Use `zinit delete --clean` to cleanup files on disk after removing a plugin
-if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-  ZINIT_HOME="${HOME}/.local/share/zinit/zinit.git"
-  [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
-  [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-  source "${ZINIT_HOME}/zinit.zsh"
+ZINIT_HOME="${HOME}/.local/share/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
 
-  zinit ice pick"async.zsh" src"pure.zsh"
-  zinit light sindresorhus/pure
+zinit ice pick"async.zsh" src"pure.zsh"
+zinit light sindresorhus/pure
 
-  zstyle ":history-search-multi-word" highlight-color "fg=yellow,bold"
-  zinit ice wait"1" lucid
-  zinit light zdharma-continuum/history-search-multi-word
+zstyle ":history-search-multi-word" highlight-color "fg=yellow,bold"
+zinit ice wait"1" lucid
+zinit light zdharma-continuum/history-search-multi-word
 
-  zinit ice wait lucid blockf atpull'zinit creinstall -q .'
-  zinit light zsh-users/zsh-completions
+zinit ice wait lucid blockf atpull'zinit creinstall -q .'
+zinit light zsh-users/zsh-completions
 
-  zinit ice wait lucid
-  zinit light grigorii-zander/zsh-npm-scripts-autocomplete
+zinit ice wait lucid
+zinit light grigorii-zander/zsh-npm-scripts-autocomplete
 
-  # zinit ice wait lucid atclone"./zplug.zsh" atpull"%atclone"
-  # zinit light g-plane/pnpm-shell-completion
+# zinit ice wait lucid atclone"./zplug.zsh" atpull"%atclone"
+# zinit light g-plane/pnpm-shell-completion
 
-  zinit ice wait lucid atclone"mise completions zsh > mise.zsh" atpull"%atclone" \
-    run-atpull pick"mise.zsh" nocompile"!" id-as"mise"
-  zinit light zdharma-continuum/null
+zinit ice wait lucid atclone"mise completions zsh > mise.zsh" atpull"%atclone" \
+  run-atpull pick"mise.zsh" nocompile"!" id-as"mise"
+zinit light zdharma-continuum/null
 
-  zinit ice wait lucid atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay"
-  zinit light zdharma-continuum/fast-syntax-highlighting
+zinit ice wait lucid atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay"
+zinit light zdharma-continuum/fast-syntax-highlighting
 
-  ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-  zinit ice wait lucid atload"_zsh_autosuggest_start"
-  zinit light zsh-users/zsh-autosuggestions
-fi
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+zinit ice wait lucid atload"_zsh_autosuggest_start"
+zinit light zsh-users/zsh-autosuggestions
 
 eval "$(mise activate zsh)"
 
@@ -184,10 +182,7 @@ function update() {
   fi
 
   mise up
-
-  if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-    zinit update
-  fi
+  zinit update
 }
 
 if [[ -f "${HOME}/.zshrc_local" ]]; then
