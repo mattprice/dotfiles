@@ -6,4 +6,4 @@
 	url = https://github.com/d12frosted/dotbot-brew.git
 [submodule "dotbot-aptget"]
 	path = dotbot-aptget
-	url = https://github.com/dein0s/dotbot_plugin_aptget.git
+	url = https://github.com/kmARC/dotbot_plugin_aptget.git
