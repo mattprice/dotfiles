@@ -1,8 +1,6 @@
 tap 'jonof/kenutils'
 
 # Applications
-# cask 'finicky'
-# cask 'hammerspoon'
 cask 'notunes'
 
 # Fonts
@@ -37,7 +35,6 @@ brew 'htop'
 brew 'httpie'
 brew 'mise'
 brew 'rename'
-brew 'tldr'
 brew 'rg'
 brew 'wget'
 # brew 'wrk'
