@@ -1,5 +1,3 @@
-tap 'jonof/kenutils'
-
 # Applications
 cask 'notunes'
 
