@@ -337,7 +337,16 @@
                         "vendor_id": 5426
                     },
                     "ignore": false,
+                    "mouse_flip_horizontal_wheel": true,
                     "mouse_flip_vertical_wheel": true
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 164,
+                        "vendor_id": 5426
+                    },
+                    "ignore": true
                 }
             ],
             "fn_function_keys": [
