@@ -2,6 +2,7 @@
 # no path and leave a trail. — Ralph Waldo Emerson
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}" # Homebrew
 export PATH="${HOME}/.local/share/mise/shims:${PATH}" # Mise
+export PATH="/usr/local/bin:/usr/local/sbin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
 
 if [[ -f "${HOME}/.zshenv_local" ]]; then
