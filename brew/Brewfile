@@ -22,6 +22,13 @@ brew 'imagemagick'
 brew 'yt-dlp'
 # brew 'mkvtoolnix'
 
+# ruby-build
+brew 'autoconf'
+brew 'gmp'
+brew 'libyaml'
+brew 'openssl@3'
+brew 'readline'
+
 # Miscellaneous
 brew 'ack'
 brew 'bat'
