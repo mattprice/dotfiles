@@ -34,7 +34,7 @@
     ~/Library/Developer/Xcode/UserData/FontAndColorThemes:
       path: xcode
       if: "[[ $(uname -s) == 'Darwin' ]]"
-    /usr/local/bin/code:
+    ~/.local/bin/code:
       path: /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
       if: "[[ $(uname -s) == 'Darwin' ]]"
 
