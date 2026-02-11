@@ -182,6 +182,7 @@ function update() {
   fi
 
   mise up
+  npm update -g
   zinit update
 }
 

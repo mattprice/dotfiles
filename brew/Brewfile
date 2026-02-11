@@ -1,13 +1,12 @@
 # Applications
-cask 'notunes'
+# cask 'notunes'
 
 # Fonts
 cask 'font-fira-code'
+# cask 'font-maple-mono'
+# cask 'font-monaspace'
 
 # QuickLook
-cask 'qlmarkdown'
-cask 'qlstephen'
-cask 'quicklook-json'
 cask 'suspicious-package'
 
 # Shell
