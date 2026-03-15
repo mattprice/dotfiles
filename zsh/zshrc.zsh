@@ -185,6 +185,10 @@ function update() {
   mise up
   npm update -g
   zinit update
+
+  if command -v claude > /dev/null; then
+    claude update
+  fi
 }
 
 if [[ -f "${HOME}/.zshrc_local" ]]; then
