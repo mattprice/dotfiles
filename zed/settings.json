@@ -1,0 +1,109 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  // Theming
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte - No Italics",
+    "dark": "Catppuccin Macchiato - No Italics",
+  },
+  "buffer_font_family": "Fira Code",
+  "buffer_font_size": 16,
+  "buffer_font_features": {
+    "ss02": true,
+    "ss03": true,
+    "ss06": true,
+    "ss08": true,
+  },
+  "colorize_brackets": false,
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.DS_Store",
+    "**/node_modules",
+    "**/build",
+    "**/dist",
+    "**/bun.lock",
+    "**/package-lock.json",
+  ],
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "background_coloring": "disabled",
+  },
+  "project_panel": {
+    "entry_spacing": "comfortable",
+    "indent_size": 15,
+    "hide_root": true,
+  },
+  "scrollbar": {
+    "git_diff": false,
+  },
+  "scroll_beyond_last_line": "off",
+
+  // Zed Settings
+  "agent": {
+    "default_profile": "write",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-opus-4.6",
+    },
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+      "default_mode": "plan",
+    },
+  },
+  "edit_predictions": {
+    "mode": "eager",
+    "provider": "copilot",
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+
+  // Language Settings
+  "languages": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+        "source.removeUnusedImports": true,
+      },
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+        "source.removeUnusedImports": true,
+      },
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+        "source.removeUnusedImports": true,
+      },
+    },
+  },
+  "lsp": {
+    "eslint": {
+      "settings": {
+        "problems": {
+          "severity": "error",
+        },
+      },
+    },
+  },
+  "format_on_save": "on",
+  "formatter": "auto",
+  "soft_wrap": "bounded",
+  "tab_size": 2,
+  "wrap_guides": [80],
+}

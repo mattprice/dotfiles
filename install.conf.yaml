@@ -21,6 +21,8 @@
     ~/.config/htop: htop
     ~/.config/lazygit: lazygit
     ~/.config/mise/config.toml: mise/mise.toml
+    ~/.config/zed/keymap.json: zed/keymap.json
+    ~/.config/zed/settings.json: zed/settings.json
     ~/.default-npm-packages: mise/default-npm-packages
     ~/.default-gems: mise/default-gems
     ~/.gitconfig: git/gitconfig
