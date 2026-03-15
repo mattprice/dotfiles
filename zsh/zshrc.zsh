@@ -1,6 +1,7 @@
 export EDITOR="code -w"
 export CLICOLOR=1
 export BAT_THEME="base16"
+export HOMEBREW_NO_ENV_HINTS=1
 
 ### ZSH SETTINGS ###
 HISTFILE=~/.zsh_history
