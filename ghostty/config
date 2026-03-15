@@ -1,0 +1,14 @@
+font-family = Fira Code
+font-size = 16.0
+font-feature = ss02, ss03, ss06, ss08
+
+# theme = Catppuccin Macchiato
+theme = Catppuccin Mocha
+background-opacity = 0.925
+background-blur-radius = 10
+# minimum-contrast = 1.1
+
+macos-titlebar-style = tabs
+window-width = 120
+window-height = 40
+window-padding-balance = true

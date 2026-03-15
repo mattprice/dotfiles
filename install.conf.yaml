@@ -17,6 +17,7 @@
     ~/.zshrc_local:
       path: zsh/zshrc_local.zsh
       if: "[[ -f zsh/zshrc_local.zsh ]]"
+    ~/.config/ghostty: ghostty
     ~/.config/htop: htop
     ~/.config/lazygit: lazygit
     ~/.config/mise/config.toml: mise/mise.toml
