@@ -5,7 +5,7 @@ export PATH="${HOME}/.local/share/mise/shims:${PATH}" # Mise
 export PATH="/usr/local/bin:/usr/local/sbin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
 
-export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CONFIG_HOME="${HOME}/.config"
 
 if [[ -f "${HOME}/.zshenv_local" ]]; then
   source "${HOME}/.zshenv_local"
