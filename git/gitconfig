@@ -42,10 +42,6 @@
 	# Usage: git versions 59dd0fcc
 	versions = !sh -c 'git tag --contains $1 | grep -E "^v"' --
 
-	# Searches files that are not excluded by .gitignore
-	# Usage: git ack "something"
-	ack = ! git ls-files --others --cached --exclude-standard | ack -x
-
 [include]
 	path = ~/.gitconfig_local
 

@@ -29,7 +29,6 @@ brew 'openssl@3'
 brew 'readline'
 
 # Miscellaneous
-brew 'ack'
 brew 'bat'
 # brew 'bfg'
 brew 'duti'

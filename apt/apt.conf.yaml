@@ -10,7 +10,6 @@
     - [./apt/add-sources, Adding additional sources]
 
 - aptget:
-    - ack
     - bat
     - eza
     - git-absorb

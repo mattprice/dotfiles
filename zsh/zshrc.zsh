@@ -133,17 +133,18 @@ function screengrab() {
 }
 
 # Output a list of TODO comments found under the current directory
-# https://mattprice.me/2014/printing-todo-comments-with-ack/
 function todo() {
-  ack -i \
-      -o \
-      --group \
-      --color \
-      --sort-files "\b(TODO|FIX(ME)?|OPTIMIZE|BUG)(\(\w+\))?: (.*)" \
-      --ignore-dir={.git,.next,build,dist,node_modules,vendor,Pods} \
-      --ignore-file=is:.eslintcache \
-      | perl -pe "s/:/\t/" \
-      | perl -pe "s/\t(\w+)(\(\w+\))?:(.*)/\t\$1:\$3 \$2/"
+  rg -i \
+     -o \
+     -N \
+     --heading \
+     --sort-files -n \
+     --color always \
+     --colors 'match:none' \
+     --colors 'match:fg:white' \
+     -P '\b(TODO|FIX(?:ME)?|OPTIMIZE|BUG)(\(\w+\))?: (.*)' \
+     -r '$1: $3 $2' \
+  | sed -E "s/:/\t/"
 }
 
 # Search for a project and quickly open it
