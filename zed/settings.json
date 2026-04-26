@@ -22,6 +22,7 @@
     "ss08": true,
   },
   "colorize_brackets": false,
+  "diff_view_style": "unified",
   "file_scan_exclusions": [
     "**/.git",
     "**/.DS_Store",
@@ -36,6 +37,7 @@
     "background_coloring": "disabled",
   },
   "project_panel": {
+    "dock": "left",
     "entry_spacing": "comfortable",
     "indent_size": 15,
     "hide_root": true,
@@ -44,9 +46,13 @@
     "git_diff": false,
   },
   "scroll_beyond_last_line": "off",
+  "soft_wrap": "none",
+  "wrap_guides": [80],
 
   // Zed Settings
   "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
@@ -63,6 +69,7 @@
     "mode": "eager",
     "provider": "copilot",
   },
+  "cli_default_open_behavior": "new_window",
   "collaboration_panel": {
     "button": false,
   },
@@ -72,6 +79,9 @@
   },
 
   // Language Settings
+  "format_on_save": "on",
+  "formatter": "auto",
+  "tab_size": 2,
   "languages": {
     "JavaScript": {
       "code_actions_on_format": {
@@ -93,6 +103,21 @@
     },
   },
   "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
     "eslint": {
       "settings": {
         "problems": {
@@ -101,9 +126,4 @@
       },
     },
   },
-  "format_on_save": "on",
-  "formatter": "auto",
-  "soft_wrap": "bounded",
-  "tab_size": 2,
-  "wrap_guides": [80],
 }
