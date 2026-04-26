@@ -30,6 +30,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -55,6 +56,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -80,6 +82,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -105,6 +108,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -130,6 +134,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -155,6 +160,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -180,6 +186,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -205,6 +212,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -230,6 +238,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -255,6 +264,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -280,6 +290,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
@@ -305,6 +316,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
+                                            "com.mitchellh.ghostty",
                                             "com.microsoft.VSCode",
                                             "dev.zed.Zed",
                                             "com.moonlight-stream.Moonlight",
