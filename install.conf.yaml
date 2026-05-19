@@ -17,10 +17,14 @@
     ~/.zshrc_local:
       path: zsh/zshrc_local.zsh
       if: "[[ -f zsh/zshrc_local.zsh ]]"
+    ~/.bunfig.toml: bun/bunfig.toml
     ~/.config/ghostty: ghostty
     ~/.config/htop: htop
     ~/.config/lazygit: lazygit
     ~/.config/mise/config.toml: mise/mise.toml
+    ~/.config/pip/pip.conf: pip/pip.conf
+    ~/.config/pnpm/config.yaml: pnpm/config.yaml
+    ~/.config/uv/uv.toml: uv/uv.toml
     ~/.config/zed/keymap.json: zed/keymap.json
     ~/.config/zed/settings.json: zed/settings.json
     ~/.default-npm-packages: mise/default-npm-packages
@@ -30,6 +34,7 @@
       path: git/gitconfig_local
       if: "[[ -f git/gitconfig_local ]]"
     ~/.gitignore_global: git/gitignore_global
+    ~/.yarnrc.yml: yarn/yarnrc.yml
 
     # Mac Applications
     ~/.config/karabiner:
@@ -44,6 +49,7 @@
 
 - shell:
     - [mise install, Installing Mise tools]
+    - [npm config set min-release-age 3, Setting npm min-release-age]
 
     - [./scripts/defaults.sh, Configuring macOS settings]
     - [./scripts/spotlight-ignore.rb, Configuring common Spotlight ignores]
