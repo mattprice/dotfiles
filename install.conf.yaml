@@ -52,5 +52,4 @@
     - [npm config set min-release-age 3, Setting npm min-release-age]
 
     - [./scripts/defaults.sh, Configuring macOS settings]
-    - [./scripts/spotlight-ignore.rb, Configuring common Spotlight ignores]
     - [./scripts/default-apps.rb, Configuring default applications for files]
