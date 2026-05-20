@@ -8,6 +8,18 @@ fi
 # Disable accented characters popup (enables key repeat)
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+# Swap Cmd+Shift+S to "Save As…", "Duplicate" to Cmd+Option+Shift+S
+defaults write -g NSUserKeyEquivalents -dict-add "Duplicate" '@~$s' "Save As…" '@$s'
+
+# Disable the language switcher popup
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
+
+# Enable zoom using scroll gesture with Ctrl modifier (System Prefs -> Accessibility -> Zoom)
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.universalaccess closeViewScrollWheelModifiersInt -int 262144
+# Use "continuously with pointer" panning mode
+defaults write com.apple.universalaccess closeViewPanningMode -int 0
+
 # Set key repeat speed (System Prefs -> Keyboard -> Keyboard)
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 25
@@ -17,6 +29,12 @@ defaults write NSGlobalDomain com.apple.trackpad.scaling 0.875
 
 # Enable Finder status bar (View -> Show Status Bar)
 defaults write com.apple.finder ShowStatusBar -bool true
+
+# Set the default Finder search scope to the current folder
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Snap to Grid for Desktop icons (Finder -> View -> Show View Options)
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # Dim the Dock icon for apps that are hidden
 defaults write com.apple.Dock showhidden -boolean yes
@@ -31,11 +49,18 @@ defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock wvous-br-corner -int 0
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Hide WiFi and Bluetooth from the menu bar (Control Center)
+defaults -currentHost write com.apple.controlcenter WiFi -int 24
+defaults -currentHost write com.apple.controlcenter Bluetooth -int 24
+
+# Hide the date from the menu bar clock (System Prefs -> Control Center -> Clock Options)
+defaults write com.apple.menuextra.clock ShowDate -int 2
+
 # Enable Safari's status bar (View -> Show Status Bar)
 defaults write com.apple.Safari ShowOverlayStatusBar -bool true
 
 # Set Safari's home page (Preferences -> General)
-defaults write com.apple.Safari HomePage -string "https://duckduckgo.com/"
+defaults write com.apple.Safari HomePage -string "https://kagi.com/"
 
 # Prevent Safari from opening files after downloading (Preferences -> General)
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
@@ -44,10 +69,6 @@ defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
-
-# Skip code folding animation to speed up the Xcode refactoring interface
-# https://twitter.com/dmartincy/status/1173289543124029440?s=20
-defaults write com.apple.dt.Xcode CodeFoldingAnimationSpeed -int 0
 
 # Don't write .DS_Store files to network shares
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
