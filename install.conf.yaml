@@ -38,9 +38,6 @@
     ~/.config/karabiner:
       path: karabiner
       if: "[[ $(uname -s) == 'Darwin' ]]"
-    ~/Library/Developer/Xcode/UserData/FontAndColorThemes:
-      path: xcode
-      if: "[[ $(uname -s) == 'Darwin' ]]"
     ~/.local/bin/code:
       path: /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
       if: "[[ $(uname -s) == 'Darwin' ]]"
