@@ -2,6 +2,11 @@
 node = "lts"
 ruby = "latest"
 usage = "latest"
+"npm:diff-so-fancy" = "latest"
+"npm:pnpm" = "latest"
+"npm:svgo" = "latest"
+"gem:image_optim" = "latest"
+"gem:image_optim_pack" = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
