@@ -10,6 +10,9 @@
 
 - clean: ["~"]
 
+- create:
+    - ~/.config/projects
+
 - link:
     # Terminal
     ~/.zshenv: zsh/zshenv.zsh
@@ -43,6 +46,9 @@
       if: "[[ $(uname -s) == 'Darwin' ]]"
 
 - shell:
+    - command: 'if [[ "$SHELL" != "/bin/zsh" ]]; then chsh -s /bin/zsh; fi'
+      description: Setting default shell to zsh
+      stdin: true
     - [mise install, Installing Mise tools]
     - [npm config set min-release-age 3, Setting npm min-release-age]
 
