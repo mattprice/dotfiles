@@ -14,6 +14,10 @@ defaults write -g NSUserKeyEquivalents -dict-add "Duplicate" '@~$s' "Save As…"
 # Disable the language switcher popup
 defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
 
+# Disable selecting next/previous input source (System Settings -> Keyboard -> Keyboard Shortcuts -> Input Sources)
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 "<dict><key>enabled</key><false/></dict>"
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 61 "<dict><key>enabled</key><false/></dict>"
+
 # Change "Show Spotlight search" to Option+Space (System Settings -> Keyboard -> Keyboard Shortcuts -> Spotlight)
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "
   <dict>
@@ -29,6 +33,33 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "
       </array>
     </dict>
   </dict>"
+
+# Disable "Convert Text to Traditional Chinese" (System Settings -> Keyboard -> Keyboard Shortcuts -> Services -> Text)
+defaults write pbs NSServicesStatus -dict-add \
+  "com.apple.ChineseTextConverterService - Convert Text from Simplified to Traditional Chinese - convertTextToTraditionalChinese" "
+  <dict>
+    <key>enabled_context_menu</key><false/>
+    <key>enabled_services_menu</key><false/>
+    <key>presentation_modes</key>
+    <dict>
+      <key>ContextMenu</key><false/>
+      <key>ServicesMenu</key><false/>
+    </dict>
+  </dict>"
+
+# Disable "Convert Text to Simplified Chinese" (System Settings -> Keyboard -> Keyboard Shortcuts -> Services -> Text)
+defaults write pbs NSServicesStatus -dict-add \
+  "com.apple.ChineseTextConverterService - Convert Text from Traditional to Simplified Chinese - convertTextToSimplifiedChinese" "
+  <dict>
+    <key>enabled_context_menu</key><false/>
+    <key>enabled_services_menu</key><false/>
+    <key>presentation_modes</key>
+    <dict>
+      <key>ContextMenu</key><false/>
+      <key>ServicesMenu</key><false/>
+    </dict>
+  </dict>"
+
 # Enable zoom using scroll gesture with Ctrl modifier (System Settings -> Accessibility -> Zoom)
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess closeViewScrollWheelModifiersInt -int 262144
