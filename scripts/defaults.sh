@@ -14,6 +14,21 @@ defaults write -g NSUserKeyEquivalents -dict-add "Duplicate" '@~$s' "Save As…"
 # Disable the language switcher popup
 defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
 
+# Change "Show Spotlight search" to Option+Space (System Settings -> Keyboard -> Keyboard Shortcuts -> Spotlight)
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "
+  <dict>
+    <key>enabled</key><true/>
+    <key>value</key>
+    <dict>
+      <key>type</key><string>standard</string>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>524288</integer>
+      </array>
+    </dict>
+  </dict>"
 # Enable zoom using scroll gesture with Ctrl modifier (System Settings -> Accessibility -> Zoom)
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess closeViewScrollWheelModifiersInt -int 262144
