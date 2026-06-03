@@ -42,11 +42,11 @@
 	# Usage: git versions 59dd0fcc
 	versions = !sh -c 'git tag --contains $1 | grep -E "^v"' --
 
-[include]
-	path = ~/.gitconfig_local
-
 [init]
 	defaultBranch = main
 
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+
+[include]
+	path = ~/.gitconfig_local
