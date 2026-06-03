@@ -97,8 +97,12 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gp="git pull --rebase=merges --autostash"
 alias gs="git status"
 
-if command -v fork > /dev/null; then
-  alias gt="fork ."
+if [[ $(uname -s) == 'Darwin' ]]; then
+  if command -v fork > /dev/null; then
+    alias gt="fork ."
+  else
+    alias gt="echo \"The fork command isn't installed.\""
+  fi
 else
   function gt() {
     target="\\\wsl.localhost\Ubuntu$(realpath . | sed 's/\//\\/g')"

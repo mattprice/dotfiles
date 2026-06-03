@@ -43,7 +43,10 @@
       if: "[[ $(uname -s) == 'Darwin' ]]"
     ~/.local/bin/code:
       path: /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
-      if: "[[ $(uname -s) == 'Darwin' ]]"
+      if: "[[ -e '/Applications/Visual Studio Code.app' ]]"
+    ~/.local/bin/fork:
+      path: /Applications/Fork.app/Contents/Resources/fork_cli
+      if: "[[ -e '/Applications/Fork.app' ]]"
 
 - shell:
     - command: 'if [[ "$SHELL" != "/bin/zsh" ]]; then chsh -s /bin/zsh; fi'
