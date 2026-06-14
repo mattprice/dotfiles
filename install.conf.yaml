@@ -47,10 +47,14 @@
     ~/.local/bin/fork:
       path: /Applications/Fork.app/Contents/Resources/fork_cli
       if: "[[ -e '/Applications/Fork.app' ]]"
+    "~/Library/Application Support/Zed/extensions/work/oxc2/.npmrc":
+      path: zed/oxc-npmrc
+      if: '[[ -d "$HOME/Library/Application Support/Zed/extensions/work/oxc" ]]'
 
 - shell:
     - command: 'if [[ "$SHELL" != "/bin/zsh" ]]; then chsh -s /bin/zsh; fi'
-      description: Setting default shell to zsh
+      description: Setting default shell to zsh [chsh -s /bin/zsh]
+      quiet: true
       stdin: true
     - [mise install, Installing Mise tools]
     - [npm config set min-release-age 3, Setting npm min-release-age]
