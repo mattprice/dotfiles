@@ -76,19 +76,23 @@ defaults write NSGlobalDomain com.apple.trackpad.scaling 0.875
 # Enable Finder status bar (View -> Show Status Bar)
 defaults write com.apple.finder ShowStatusBar -bool true
 
-# Set the default Finder search scope to the current folder
+# Set the default Finder search scope to the current folder (Finder -> Settings -> Advanced)
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
-# Snap to Grid for Desktop icons (Finder -> View -> Show View Options)
+# Keep folders on top when sorting by name (Finder -> Settings -> Advanced)
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
+
+# Enable "Snap to Grid" for Desktop icons (Finder -> View -> Show View Options)
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # Dim the Dock icon for apps that are hidden
 defaults write com.apple.Dock showhidden -boolean yes
 
-# Don’t automatically rearrange Spaces based on most recent use (System Settings -> Desktop & Dock)
+# Don't automatically rearrange Spaces based on most recent use (System Settings -> Desktop & Dock)
 defaults write com.apple.dock mru-spaces -bool false
 
-# Don’t show recent applications in Dock (System Settings -> Dock)
+# Don't show recent applications in Dock (System Settings -> Desktop & Dock)
 defaults write com.apple.dock show-recents -bool false
 
 # Disable "Quick Note" hot corner (System Settings -> Desktop & Dock -> Hot Corners)
