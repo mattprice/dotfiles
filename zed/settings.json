@@ -8,6 +8,12 @@
 // from the command palette or from `Zed` application menu.
 {
   // Theming
+  "language_models": {
+    "opencode": {
+      "show_zen_models": false,
+      "show_free_models": false,
+    },
+  },
   "outline_panel": {
     "dock": "left",
   },
@@ -61,19 +67,23 @@
     "dock": "right",
     "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-opus-4.6",
+      "effort": "max",
+      "provider": "opencode",
+      "model": "go/glm-5.2",
+      "enable_thinking": true,
     },
   },
   "agent_servers": {
     "claude-acp": {
+      "default_config_options": {
+        "mode": "auto",
+      },
       "type": "registry",
-      "default_mode": "plan",
     },
   },
   "edit_predictions": {
     "mode": "eager",
-    "provider": "copilot",
+    "provider": "zed",
     "allow_data_collection": "no",
   },
   "cli_default_open_behavior": "new_window",
