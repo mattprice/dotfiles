@@ -83,6 +83,9 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
 
+# Show the Library folder (Finder -> View -> Show View Options)
+chflags nohidden ~/Library
+
 # Enable "Snap to Grid" for Desktop icons (Finder -> View -> Show View Options)
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
