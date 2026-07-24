@@ -1,24 +1,32 @@
 # Applications
 # cask 'notunes'
+cask 'suspicious-package'
 
 # Fonts
 cask 'font-fira-code'
 # cask 'font-maple-mono'
 # cask 'font-monaspace'
 
-# QuickLook
-cask 'suspicious-package'
-
-# Shell
+# Files & Search
+brew 'bat'
 brew 'eza'
+brew 'fd'
 brew 'fzy'
-brew 'shellcheck'
+brew 'pipe-rename'
+brew 'rg'
+brew 'wget'
 
-# Images/Videos
+# Images & Video
 brew 'ffmpeg'
 brew 'imagemagick'
 brew 'yt-dlp'
-# brew 'mkvtoolnix'
+
+# Development
+brew 'git'
+brew 'httpie'
+brew 'lazygit'
+brew 'mise'
+brew 'shellcheck'
 
 # ruby-build
 brew 'autoconf'
@@ -27,17 +35,6 @@ brew 'libyaml'
 brew 'openssl@3'
 brew 'readline'
 
-# Miscellaneous
-brew 'bat'
-# brew 'bfg'
+# System
 brew 'duti'
-brew 'fd'
-brew 'git'
 brew 'htop'
-brew 'httpie'
-brew 'lazygit'
-brew 'mise'
-brew 'rename'
-brew 'rg'
-brew 'wget'
-# brew 'wrk'
