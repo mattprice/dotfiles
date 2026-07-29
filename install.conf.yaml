@@ -47,6 +47,9 @@
     ~/.local/bin/fork:
       path: /Applications/Fork.app/Contents/Resources/fork_cli
       if: "[[ -e '/Applications/Fork.app' ]]"
+    ~/.local/bin/zed:
+      path: /Applications/Zed.app/Contents/MacOS/cli
+      if: "[[ -e '/Applications/Zed.app' ]]"
     "~/Library/Application Support/Zed/extensions/work/oxc2/.npmrc":
       path: zed/oxc-npmrc
       if: '[[ -d "$HOME/Library/Application Support/Zed/extensions/work/oxc" ]]'
