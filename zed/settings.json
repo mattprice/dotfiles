@@ -42,6 +42,7 @@
     "**/package-lock.json",
   ],
   "git_panel": {
+    "fallback_branch_name": "main",
     "dock": "left",
     "tree_view": true,
   },
@@ -120,6 +121,7 @@
       },
     },
     "Markdown": {
+      "show_edit_predictions": false,
       "soft_wrap": "bounded",
     },
   },
