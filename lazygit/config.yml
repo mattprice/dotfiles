@@ -1,9 +1,8 @@
 git:
   ignoreWhitespaceInDiffView: true
   overrideGpg: true
-  pagers:
-    - pager: diff-so-fancy
-
+  diffRenderers:
+    - command: diff-so-fancy
 gui:
   # https://github.com/catppuccin/lazygit
   theme:
