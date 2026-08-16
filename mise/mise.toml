@@ -11,5 +11,5 @@ uv = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
-minimum_release_age = "3d"
+minimum_release_age = "1d"
 python.uv_venv_auto = "create|source"
