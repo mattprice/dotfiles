@@ -7,7 +7,9 @@ usage = "latest"
 "npm:svgo" = "latest"
 "gem:image_optim" = "latest"
 "gem:image_optim_pack" = "latest"
+uv = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
 minimum_release_age = "3d"
+python.uv_venv_auto = "create|source"
