@@ -11,7 +11,7 @@
   "language_models": {
     "opencode": {
       "show_zen_models": false,
-      "show_free_models": false,
+      "show_go_models": true,
     },
   },
   "outline_panel": {
@@ -42,6 +42,7 @@
     "**/package-lock.json",
   ],
   "git_panel": {
+    "commit_title_max_length": 70,
     "fallback_branch_name": "main",
     "dock": "left",
     "tree_view": true,
@@ -68,13 +69,18 @@
     "dock": "right",
     "default_profile": "write",
     "default_model": {
-      "effort": "max",
-      "provider": "opencode",
-      "model": "go/glm-5.2",
+      "provider": "openrouter",
+      "model": "openai/gpt-5.6-luna",
       "enable_thinking": true,
     },
   },
   "agent_servers": {
+    "pi-acp": {
+      "default_config_options": {
+        "thought_level": "high",
+      },
+      "type": "registry",
+    },
     "claude-acp": {
       "default_config_options": {
         "mode": "auto",
