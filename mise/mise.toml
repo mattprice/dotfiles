@@ -2,6 +2,7 @@
 node = "lts"
 ruby = "latest"
 usage = "latest"
+"npm:@earendil-works/pi-coding-agent" = "latest"
 "npm:diff-so-fancy" = "latest"
 "npm:pnpm" = "latest"
 "npm:svgo" = "latest"

@@ -194,6 +194,10 @@ function update() {
   if command -v claude > /dev/null; then
     claude update
   fi
+
+  if command -v pi > /dev/null; then
+    pi update --extensions
+  fi
 }
 
 if [[ -f "${HOME}/.zshrc_local" ]]; then
