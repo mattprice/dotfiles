@@ -34,6 +34,22 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "
     </dict>
   </dict>"
 
+# Change "Ask Siri about active window" to Option+Shift+Space (System Settings -> Keyboard -> Keyboard Shortcuts -> Screenshots)
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 263 "
+  <dict>
+    <key>enabled</key><false/>
+    <key>value</key>
+    <dict>
+      <key>type</key><string>standard</string>
+      <key>parameters</key>
+      <array>
+        <integer>32</integer>
+        <integer>49</integer>
+        <integer>655360</integer>
+      </array>
+    </dict>
+  </dict>"
+
 # Disable "Convert Text to Traditional Chinese" (System Settings -> Keyboard -> Keyboard Shortcuts -> Services -> Text)
 defaults write pbs NSServicesStatus -dict-add \
   "com.apple.ChineseTextConverterService - Convert Text from Simplified to Traditional Chinese - convertTextToTraditionalChinese" "
