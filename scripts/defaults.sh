@@ -142,4 +142,11 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Don't write .DS_Store files to network shares
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 
+# Hide the WhatsApp sidebar
+defaults write net.whatsapp.WhatsApp com.apple.UIKit.UITabSidebar -dict-add \
+  "com.whatsapp.sidebar.tabs" "<dict>
+    <key>preferredVisibility</key><integer>1</integer>
+    <key>version</key><integer>1</integer>
+  </dict>"
+
 echo "Please log out for settings to take effect."
