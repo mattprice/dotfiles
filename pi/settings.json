@@ -1,21 +1,20 @@
 {
-  "lastChangelogVersion": "0.87.0",
+  "lastChangelogVersion": "0.87.1",
   "theme": "catppuccin-mocha",
-  "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-luna",
+  "defaultProvider": "openai",
+  "defaultModel": "gpt-6-luna",
+  "defaultThinkingLevel": "max",
   "enabledModels": [
-    "openai-codex/gpt-5.6-luna"
+    "openai/gpt-6-luna",
   ],
-  "quietStartup": true,
+  "cacheWarming": "idle",
   "enableInstallTelemetry": false,
-  "defaultThinkingLevel": "xhigh",
+  "quietStartup": true,
+  "tuiMode": "fullscreen",
   "packages": [
     "npm:pi-mcp-adapter",
     "npm:pi-simplify",
     "npm:@juicesharp/rpiv-ask-user-question",
     "git:github.com/earendil-works/pi-review"
-  ],
-  "hideThinkingBlock": false,
-  "tuiMode": "fullscreen",
-  "cacheWarming": "idle"
+  ]
 }

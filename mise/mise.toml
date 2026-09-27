@@ -2,10 +2,10 @@
 node = "lts"
 ruby = "latest"
 usage = "latest"
-"npm:@earendil-works/pi-coding-agent" = "latest"
+"npm:@earendil-works/pi-coding-agent" = { version = "latest", minimum_release_age = "0h" }
 "npm:diff-so-fancy" = "latest"
-"npm:pnpm" = "latest"
 "npm:svgo" = "latest"
+"github:pnpm/pnpm" = "latest"
 "gem:image_optim" = "latest"
 "gem:image_optim_pack" = "latest"
 uv = "latest"

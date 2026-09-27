@@ -60,21 +60,21 @@
 
   // Zed Settings
   "agent": {
+    "tool_permissions": {
+      "default": "allow",
+      "tools": {
+        "edit_file": {
+          "always_deny": [{ "pattern": "\\.env" }],
+        },
+      },
+    },
     "dock": "right",
     "default_profile": "write",
     "default_model": {
-      "effort": "xhigh",
-      "provider": "openrouter",
-      "model": "openai/gpt-5.6-luna",
+      "effort": "max",
+      "provider": "openai",
+      "model": "gpt-6-luna",
       "enable_thinking": true,
-    },
-  },
-  "agent_servers": {
-    "pi-acp": {
-      "default_config_options": {
-        "thought_level": "xhigh",
-      },
-      "type": "registry",
     },
   },
   "edit_predictions": {
