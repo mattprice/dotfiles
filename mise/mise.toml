@@ -1,16 +1,16 @@
 [tools]
 node = "lts"
+pnpm = "latest"
 ruby = "latest"
 usage = "latest"
+uv = "latest"
 "npm:@earendil-works/pi-coding-agent" = { version = "latest", minimum_release_age = "0h" }
 "npm:diff-so-fancy" = "latest"
 "npm:svgo" = "latest"
-"github:pnpm/pnpm" = "latest"
 "gem:image_optim" = "latest"
 "gem:image_optim_pack" = "latest"
-uv = "latest"
 
 [settings]
-idiomatic_version_file_enable_tools = ["node"]
+idiomatic_version_file_enable_tools = ["node", "pnpm"]
 minimum_release_age = "1d"
 python.uv_venv_auto = "create|source"
