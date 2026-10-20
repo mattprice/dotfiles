@@ -7,6 +7,9 @@ export PATH="${HOME}/.local/bin:${PATH}"
 
 export XDG_CONFIG_HOME="${HOME}/.config"
 
+# Always use aqua, even when package.json `packageManager` contains a checksum
+export MISE_BACKENDS_PNPM="aqua:pnpm/pnpm"
+
 if [[ -f "${HOME}/.zshenv_local" ]]; then
   source "${HOME}/.zshenv_local"
 fi
