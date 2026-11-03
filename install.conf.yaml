@@ -35,6 +35,7 @@
       path: git/gitconfig_local
       if: "[[ -f git/gitconfig_local ]]"
     ~/.gitignore_global: git/gitignore_global
+    ~/.pi/agent/extensions: pi/extensions
     ~/.pi/agent/themes: pi/themes
     ~/.pi/agent/settings.json: pi/settings.json
     ~/.yarnrc.yml: yarn/yarnrc.yml
