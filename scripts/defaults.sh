@@ -5,6 +5,9 @@ if [[ $(uname -s) != 'Darwin' ]]; then
   exit 0
 fi
 
+# Hide the last login notice in terminal sessions
+touch "$HOME/.hushlogin"
+
 # Disable accented characters popup (enables key repeat)
 defaults write -g ApplePressAndHoldEnabled -bool false
 
