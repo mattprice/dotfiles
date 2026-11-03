@@ -1,16 +1,18 @@
 {
-  "lastChangelogVersion": "1.2.0",
+  "lastChangelogVersion": "1.5.0",
   "theme": "catppuccin-mocha",
   "tuiMode": "fullscreen",
   "defaultProvider": "openai",
-  "defaultModel": "gpt-6.1-sol",
+  "defaultModel": "gpt-6.1-terra",
   "enabledModels": [
     "openai/gpt-6-luna",
+    "openai/gpt-6.1-terra",
     "openai/gpt-6.1-sol"
   ],
-  "defaultThinkingLevel": "max",
+  "defaultThinkingLevel": "medium",
   "modelThinkingLevels": {
     "openai/gpt-6-luna": "xhigh",
+    "openai/gpt-6.1-terra": "low",
     "openai/gpt-6.1-sol": "low"
   },
   "defaultTools": [
@@ -22,6 +24,8 @@
   "packages": [
     "npm:pi-simplify",
     "npm:@juicesharp/rpiv-ask-user-question",
-    "git:github.com/earendil-works/pi-review"
-  ]
+    "git:github.com/earendil-works/pi-review",
+    "npm:pi-compact-tools"
+  ],
+  "hideThinkingBlock": true,
 }
