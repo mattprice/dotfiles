@@ -63,7 +63,7 @@
       quiet: true
       stdin: true
     - [mise install, Installing Mise tools]
-    - [npm config set min-release-age 3, Setting npm min-release-age]
+    - [npm config set min-release-age 1, Setting npm min-release-age]
 
     - [./scripts/defaults.sh, Configuring macOS settings]
     - [./scripts/default-apps.sh, Configuring default applications for files]
