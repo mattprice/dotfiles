@@ -1,5 +1,6 @@
 {
-  "lastChangelogVersion": "1.5.0",
+  "lastChangelogVersion": "1.5.1",
+  "selfUpdateCommand": ["mise", "up", "-g", "npm:{packageName}"],
   "theme": "catppuccin-mocha",
   "tuiMode": "fullscreen",
   "defaultProvider": "openai",
@@ -18,14 +19,14 @@
   "defaultTools": [
     "+codemode"
   ],
-  "cacheWarming": "idle",
   "enableInstallTelemetry": false,
+  "hideThinkingBlock": true,
   "quietStartup": true,
+  "showHardwareCursor": true,
   "packages": [
     "npm:pi-simplify",
     "npm:@juicesharp/rpiv-ask-user-question",
     "git:github.com/earendil-works/pi-review",
     "npm:pi-compact-tools"
   ],
-  "hideThinkingBlock": true,
 }
